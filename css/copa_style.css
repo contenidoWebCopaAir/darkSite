@@ -24,7 +24,7 @@ h1 { font-size: 20px; }
 h3, h4 { color: #214981; font-family:"Calibri W01 Regular 904604"; margin-bottom: 16px; font-size: 14.5px; }
 p, a { font-family:"Calibri W01 Regular 904604"; font-size: 14px; line-height: 18px }
 p { color: #333; }
-a { color: #006BB3; }
+a { color: #666; }
 ul > li { list-style: none; }
 
 body {
@@ -34,6 +34,11 @@ body {
 
 img { width:100%; }
 .logo_copa{ width:40%; }
+@media(max-width: 700px){
+  .logo_copa{ width:60%; }
+}
+
+.nav-second-level>li>a { padding: 5px 15px !important; }
 
 .navbar {
   margin-bottom: 20px;
@@ -243,7 +248,18 @@ table tbody { background-color: #efefef; }
         padding: 0 30px;
         border-left: 1px solid #e7e7e7;
     }
+
+
 }
+
+@media(max-width:768px){
+    .navbar-default .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .navbar-nav { margin:0; }
+}
+
 
 .navbar-top-links {
     margin-right: 0;
@@ -569,5 +585,18 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+.footer-title {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: -webkit-linear-gradient(#c8c8c8, #999999); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c8c8c8, #999999); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c8c8c8, #999999); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c8c8c8, #999999); /* Standard syntax */  
+}
+
+.table>tbody>tr>td { padding: 2px; border-top:none; border-right: 1px solid #ddd }
+
+.blank { height: 60px; color:#fff; padding: 30px;  }
 
 
