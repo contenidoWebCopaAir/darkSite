@@ -1,6 +1,6 @@
 (function(){
 	var data = {
-		menu: {
+		menu_top: {
 			en: [
 				{text: 'Book Your Trip',
 				url: 'https://bookings.copaair.com/CMGS/AirSearchExternalForward.do?tripType=RT&pos=CMGS&lang=en'},
@@ -27,18 +27,92 @@
 				{text: 'MileagePlus®', url: 'https://connectmiles.copaair.com/pt?utm_source=copaair.com&utm_medium=referral&utm_campaign=copaairESmenu'},
 				{text: 'Promoções', url: 'http://www.copaair.com/sites/gs/pt/deals-and-offers/pages/web-deals.aspx'}
 			]
+		},
+		menu_left: {			
+			en: {
+				title: 'Aditional Info',
+				items: [
+					{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
+					{ text: 'Press Releases', url: 'content/en/press-releases-en.html' },
+					{ text: 'Contact Numbers', url: 'content/en/contact-numbers.html' },
+					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
+					{ text: 'Corporate', url: 'content/en/corporate.html' }
+				]
+			},
+			es: {
+				title: 'Información Adicional',
+				items: [
+					{ text: 'Ultimas Noticias', url: 'content/es/latest-news-en.html' },
+					{ text: 'Comunicados de Prensa', url: 'content/es/press-releases-en.html' },
+					{ text: 'Números de Contacto', url: 'content/es/contact-numbers.html' },
+					{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' },
+					{ text: 'Corporativo', url: 'content/es/corporate.html' }
+				]
+			},
+			pt: {
+				title: 'Informação Adicional',
+				items: [
+					{ text: 'Últimas Notícias', url: 'content/pt/latest-news-en.html' },
+					{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases-en.html' },
+					{ text: 'Números de Contato', url: 'content/pt/contact-numbers.html' },
+					{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' },
+					{ text: 'Corporativo', url: 'content/pt/corporate.html' }
+				]
+			}
+		},
+		menu_bottom: {
+			en: {
+				col1:{
+					title: 'Flight Information',
+					items: [
+						{ text: 'Baggage', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx'  },
+						{ text: 'Travelling with pets', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/Mascotas.aspx' },
+						{ text: 'Baggage and service fees', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/tarifas-equipaje-y-de-servicios-opcionales.aspx' },
+						{ text: 'Where we fly', url: 'http://www.copaair.com/sites/CC/en/flight-information/Pages/routemap.aspx' },
+						{ text: 'Inmigration requirements', url: 'http://www.copaair.com/sites/cc/en/Pages/timatic.aspx' },
+						{ text: 'Special Assistance', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/Servicios-Especiales-para-Pasajeros.aspx' },
+						{ text: 'Flight status', url: 'http://www.copaair.com/sites/CC/en/flight-information/Pages/flightstatus.aspx' }
+
+					]
+				}	
+			}
 		}
 
 	};
 	var app = angular.module('darkSite', []);
 
-	app.controller('MenuController', ['$scope', function($scope){
-			//Cambiar el menú segun el selector de idioma
-			$scope.current_lang = [];
-			$scope.change = function(){
-				alert($scope.current_lang);
+	app.controller('MenuController', function(){
+			//El idioma por defecto sera el inglés
+			this.currentLang = 'en';
+
+			this.navClass = 'nav-en';
+
+			this.menuTop = data.menu_top.en;
+			this.menuLeft = data.menu_left.en;
+
+			/**
+			* Selecciona el idioma deseado
+			**/
+			this.setLang = function(){
+				switch(this.currentLang){
+					case 'en':
+						this.menuTop = data.menu_top.en;
+						this.menuLeft = data.menu_left.en;
+						this.navClass = 'nav-en';
+						break;
+					case 'es':
+						this.menuTop = data.menu_top.es;
+						this.menuLeft = data.menu_left.es;
+						this.navClass = 'nav-es';
+						break;
+					case 'pt':
+						this.menuTop = data.menu_top.pt;
+						this.menuLeft = data.menu_left.pt;
+						this.navClass = 'nav-pt';
+						break;
+				}
 			};
 
-	}]);
+	});
 
 })();

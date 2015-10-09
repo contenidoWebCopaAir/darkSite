@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="example">
+<head>
+	<title>Ejemplo angular</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body ng-controller="CountController as count">
+	<div class="container">
+		<a href="#" ng-click="count.incTag1()">Tag1</a>
+		<buttom >Click</buttom>
+		<hr>
+		<pre>{{ count.data | json }}</pre>
+	</div>
+	
+
+	
+	 <script src="js/angular.min.js"></script>
+	 <script src="js/example.js"></script>
+
+	 <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

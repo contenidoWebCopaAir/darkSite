@@ -22,7 +22,7 @@ src:url("../fonts/f5fb4de8-efeb-47a8-94a7-50b825a6966a.eot?#iefix") format("eot"
 h1, h2 { color: #214981; font-family:"Calibri W01 Bold 904607"; }
 h1 { font-size: 20px; }
 h3, h4 { color: #214981; font-family:"Calibri W01 Regular 904604"; margin-bottom: 16px; font-size: 14.5px; }
-p, a { font-family:"Calibri W01 Regular 904604"; font-size: 14px; line-height: 18px }
+p, a { font-family:"Calibri W01 Regular 904604"; font-size: 14px; line-height: 18px; margin:0px  }
 p { color: #333; }
 a { color: #666; }
 ul > li { list-style: none; }
@@ -33,10 +33,7 @@ body {
 }
 
 img { width:100%; }
-.logo_copa{ width:40%; }
-@media(max-width: 700px){
-  .logo_copa{ width:60%; }
-}
+.logo_copa{ width:40%; margin-bottom: 10px }
 
 .nav-second-level>li>a { padding: 5px 15px !important; }
 
@@ -44,12 +41,37 @@ img { width:100%; }
   margin-bottom: 20px;
 }
 
+@media(max-width:768px){
+    .navbar-default .navbar-nav>li>a {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+    .navbar-nav { margin:0; }
+    .logo_copa{ width:100%; }
+}
+
+
+
+
+
 .navbar-default .navbar-nav>li>a {
 	background: -webkit-linear-gradient(#005CA7, #00369A); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(#005CA7, #00369A); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(#005CA7, #00369A); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#005CA7, #00369A); /* Standard syntax */
-	padding: 25px 21.9px 25px 21.9px;
+
+}
+
+.nav-en { padding: 25px 22px 25px 22px !important; }
+
+.nav-es { padding: 25px 21.8px 25px 21.8px !important; font-size: 17px !important; }
+
+.nav-pt { padding: 25px 21.6px 25px 21.6px !important; font-size: 16px !important; }
+
+@media(max-width: 990px){
+  .nav-es { font-size: 1.2em !important; padding-left: 3.7px !important; padding-right: 3.7px !important; }
+  .nav-en { padding-left: 3.7px !important; padding-right: 3.7px !important; }
+  .nav-pt { font-size: 1.1em !important; padding-left: 4.8px !important; padding-right: 4.8px !important; }
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -72,6 +94,8 @@ img { width:100%; }
 	background: -moz-linear-gradient(#64c3ff, #6699ff); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(#64c3ff, #6699ff); /* Standard syntax */
 }
+
+
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
 	color: #FFF;
@@ -230,7 +254,17 @@ table thead {
 	background: linear-gradient(#c8c8c8, #999999); /* Standard syntax */	
 }
 
+.table>tbody>tr>td, .table>thead>tr>th {
+  padding-left: 50px !important;
+}
+
+
 table tbody { background-color: #efefef; }
+
+@media screen and (max-width: 767px)
+.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+    white-space: normal;
+}
 
 /*** SB-Admin ***/
 
@@ -251,15 +285,6 @@ table tbody { background-color: #efefef; }
 
 
 }
-
-@media(max-width:768px){
-    .navbar-default .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    .navbar-nav { margin:0; }
-}
-
 
 .navbar-top-links {
     margin-right: 0;
