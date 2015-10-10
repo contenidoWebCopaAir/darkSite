@@ -33,10 +33,11 @@
             <div class="form-group">
               <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-globe fa-3"></i></div>
-                <select class="form-control" ng-model="menuCtr.currentLang" ng-change="menuCtr.setLang()">
-                  <option value="en" selected>Inglés</option>
-                  <option value="es">Español</option>
-                  <option value="pt">Portugués</option>
+                <select 
+                  class="form-control" 
+                  ng-model="menuCtr.currentLang" 
+                  ng-change="menuCtr.setLang()"
+                  ng-options="option.label for option in menuCtr.select track by option.value">
                 </select>
               </div>
             </div>

@@ -1,5 +1,22 @@
 (function(){
 	var data = {
+		select:{
+			en: [
+				{ value: 'en', label: 'English' },
+				{ value: 'es', label: 'Spanish' },
+				{ value: 'pt', label: 'Portuguese'}
+			],  
+			es: [
+				{ value: 'en', label: 'Inglés' }, 
+				{ value: 'es', label: 'Español' },
+				{ value: 'pt', label: 'Portugués' }
+			],
+			pt: [
+				{ value: 'en', label: 'Inglês' }, 
+				{ value: 'es', label: 'Espanhol' },
+				{ value: 'pt', label: 'Português' } 
+			]
+		},
 		menu_top: {
 			en: [
 				{text: 'Book Your Trip',
@@ -83,32 +100,36 @@
 
 	app.controller('MenuController', function(){
 			//El idioma por defecto sera el inglés
-			this.currentLang = 'pt';
+			this.currentLang 	= { value:'pt', label: 'Português' };
 
-			this.navClass = 'nav-pt';
+			this.navClass 		= 'nav-pt';
 
-			this.menuTop = data.menu_top.pt;
-			this.menuLeft = data.menu_left.pt;
+			this.select 		= data.select.pt
+			this.menuTop 		= data.menu_top.pt;
+			this.menuLeft 		= data.menu_left.pt;
 
 			/**
 			* Selecciona el idioma deseado
 			**/
 			this.setLang = function(){
-				switch(this.currentLang){
+				switch(this.currentLang.value){
 					case 'en':
-						this.menuTop = data.menu_top.en;
-						this.menuLeft = data.menu_left.en;
-						this.navClass = 'nav-en';
+						this.select		= data.select.en;
+						this.menuTop 	= data.menu_top.en;
+						this.menuLeft 	= data.menu_left.en;
+						this.navClass 	= 'nav-en';
 						break;
 					case 'es':
-						this.menuTop = data.menu_top.es;
-						this.menuLeft = data.menu_left.es;
-						this.navClass = 'nav-es';
+						this.select		= data.select.es;		
+						this.menuTop 	= data.menu_top.es;
+						this.menuLeft 	= data.menu_left.es;
+						this.navClass 	= 'nav-es';
 						break;
 					case 'pt':
-						this.menuTop = data.menu_top.pt;
-						this.menuLeft = data.menu_left.pt;
-						this.navClass = 'nav-pt';
+						this.select		= data.select.pt;
+						this.menuTop 	= data.menu_top.pt;
+						this.menuLeft 	= data.menu_left.pt;
+						this.navClass 	= 'nav-pt';
 						break;
 				}
 			};
