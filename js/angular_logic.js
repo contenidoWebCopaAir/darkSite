@@ -83,12 +83,12 @@
 
 	app.controller('MenuController', function(){
 			//El idioma por defecto sera el inglés
-			this.currentLang = 'en';
+			this.currentLang = 'pt';
 
-			this.navClass = 'nav-en';
+			this.navClass = 'nav-pt';
 
-			this.menuTop = data.menu_top.en;
-			this.menuLeft = data.menu_left.en;
+			this.menuTop = data.menu_top.pt;
+			this.menuLeft = data.menu_left.pt;
 
 			/**
 			* Selecciona el idioma deseado
