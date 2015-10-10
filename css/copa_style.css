@@ -59,13 +59,13 @@ img { width:100%; }
 }
 
 .nav-en { padding: 25px 21.67px 25px 21.67px !important; }
-.nav-es { padding: 25px 21.65px 25px 21.65px !important; font-size: 18px !important; }
+.nav-es { padding: 25px 17.99px 25px 17.99px !important; font-size: 18px !important; }
 .nav-pt { padding: 25px 13.89px 25px 13.89px !important; font-size: 18px !important; }
 
 @media(max-width: 990px){
   div.container { width:850px !important; }
   .nav-en { padding-left: 11.6px !important; padding-right: 11.6px !important; }
-  .nav-es { font-size: 1.3em !important; padding-left: 11px !important; padding-right: 11px !important; }
+  .nav-es { font-size: 1.2em !important; padding-left: 11.99px !important; padding-right: 11.99px !important; }
   .nav-pt { font-size: 1.2em !important; padding-left: 8.15px !important; padding-right: 8.15px !important; }
 }
 
@@ -74,7 +74,7 @@ img { width:100%; }
   div.container { width:750px !important; }
   .sidebar { width: 221px !important; }
   .nav-en { font-size: 1.2em !important; padding-left: 7.07px !important; padding-right: 7.07px !important; }
-  .nav-es { font-size: 1.2em !important; padding-left: 7.07px !important; padding-right: 7.07px !important; }
+  .nav-es { font-size: 1.1em !important; padding-left: 8.308px !important; padding-right: 8.308px !important; }
   .nav-pt { font-size: 1.1em !important; padding-left: 4.78px !important; padding-right: 4.78px !important; }
 }
 
