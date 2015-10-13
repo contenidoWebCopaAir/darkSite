@@ -82,6 +82,7 @@
 			en: {
 				lists:[
 						{
+						id: 1,							
 						title: 'Fligth Information',
 						items: [
 							{ label: 'Baggage', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx' },
@@ -97,6 +98,7 @@
 						] 
 					},
 					{
+						id: 2,
 						title: 'Passenger Service',
 						items: [
 							{ label: 'Contact us', url: 'http://www.copaair.com/sites/CC/en/Nuestros-Productos/Pages/seguro-de-viaje.aspx' },
@@ -109,6 +111,27 @@
 					}
 				]
 				
+			}
+		},
+		full_footer: {
+			en: {
+				lists: [
+					{
+						title: 'Reservations',
+						items: [
+							{ label: 'Book you flight', url: 'https://bookings.copaair.com/CMGS/AirSearchExternalForward.do?tripType=RT&pos=CMGS&lang=en' },
+							{ label: 'Book your hotel', url: 'http://www.travelnow.com/templates/354655?lang=en' },
+							{ label: 'Book your Car', url: 'http://cars.cartrawler.com/copaair/en/?' },
+							{ label: 'Request and Upgrade', url: 'http://www.copaair.com/sites/CC/en/Nuestros-Productos/Pages/plusgrade-info.aspx' },
+							{ label: 'Travel Insurance', url: 'http://www.copaair.com/sites/CC/en/Nuestros-Productos/Pages/seguro-de-viaje-ace.aspx' },
+							{ label: 'Book your Insurance', url: 'https://copa.acetravelinsurance.com/PA/?sessionLocale=en' },
+							{ label: 'Destination Guides', url: 'http://destinationsguide.copaair.com/en/' },
+							{ label: 'Manage your booking', url: 'https://bookings.copaair.com/CMGS/ReservationSearch.do?lang=en' },
+							{ label: 'Web Check-In', url: 'http://checkin.copaair.com/web/' },
+							{ label: 'm.copaair.com', url: 'http://www.copaair.com/sites/CC/en/beneficios-portal/Pages/copa-mobile.aspx' }	
+						]
+					}
+				]
 			}
 		}
 	};
@@ -128,10 +151,10 @@
 			this.width 			= data.width;		//Ancho de la ventana
 
 
-			if( this.width < 625 ){
-				this.footerTmp = 'footer-min.html';  
-			} else {
-				this.footerTmp = 'footer-full.html';	
+			for( var key in this.menuBottom.lists ){
+				for( var obj in key ){
+					console.log(obj.title);
+				}
 			}
 
 			/**

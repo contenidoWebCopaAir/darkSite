@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Copa Airlines</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/copa_style.css" rel="stylesheet">
+
+  </head>
+
+  <body ng-app="darkSite">
+
+    <div class="container" ng-controller="MenuController as menuCtr">
+      <div class="row">
+
+        <div class="col-xs-6 col-md-9 col-lg-9">
+          <a href="www.copaair.com">
+            <img src="img/COPA_STAR_LOGO.svg" class="logo_copa">
+          </a>  
+        </div>
+        <div class="pull-right col-xs-6 col-md-3 col-lg-3">
+         
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-globe fa-3"></i></div>
+                <select 
+                  class="form-control" 
+                  ng-model="menuCtr.currentLang" 
+                  ng-change="menuCtr.setLang()"
+                  ng-options="option.label for option in menuCtr.select track by option.value">
+                </select>
+              </div>
+            </div>
+         
+          </div>
+          
+      </div>
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        
+          <div class="navbar-header">
+            <button type="button" 
+              class="navbar-toggle collapsed" 
+              data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ng-repeat="item in menuCtr.menuTop">
+                <a href="{{ item.url }}" ng-class="menuCtr.navClass">
+                  {{ item.text }}
+                </a>
+              </li>
+            </ul>
+            
+          </div><!--/.nav-collapse -->
+      </nav>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav">
+              <ul class="nav" id="side-menu">
+                <li class="active">
+                  <a href="#"><i class="fa fa-book fa-2"></i> {{ menuCtr.menuLeft.title }} <span class="fa arrow"></span></a>
+                  <ul class="nav nav-second-level">
+                    <li ng-repeat="item in menuCtr.menuLeft.items">
+                      <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                  </ul><!-- /.nav-second-level -->
+                </li>
+              </ul>
+            </div><!-- /.sidebar-collapse -->
+          </div>
+        </div><!-- col-sm-4 -->
+
+        <div id="content" class="col-sm-8 blog-main">
+          <div class="blog-post">
+            <h1>Latest News</h1>
+            <p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>
+   
+            <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p>
+            
+            <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers and crew of flight CM9972:</p>
+            <ul>
+              <li><strong><p>From Panama 8000197</p></strong></li>
+              <li><strong><p>From Colombia 018007102179</p></strong></li>
+              <li><strong><p>From United States 8887057560</p></strong></li>
+              <li><strong><p>From Venezuela 08001009107</p></strong></li>
+              <li><strong><p>From Salvador 8006814</p></strong></li>
+              <li><strong><p>From Spain 900808890</p></strong></li>
+              <li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li>
+            </ul>
+            <p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. They are not intended for use by media.</p>
+            <p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters located in Urbanización Costa del Este in Panama.</p>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+      <footer>
+        <div class="row footer-background">
+          <div class="col-xs-6 footer-body" ng-repeat="list in menuCtr.menuBottom.lists track by list.id">
+            <div class="footer-title">
+              <h3>{{ list.title }}</h3>
+            </div>
+            <ul>
+              <li ng-repeat="item in list.items">
+                <a href="{{ item.url }}">{{ item.label }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" ng-include="'content/' + menuCtr.currentLang.value + '/copyright.html'"> 
+        </div>
+      </footer>
+
+
+      </div> 
+    </div> <!-- /container -->
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/side_menu.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/angular_logic_list.js"></script>
+  </body>
+</html>
