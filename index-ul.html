@@ -90,30 +90,83 @@
         </div><!-- col-sm-4 -->
 
         <div id="content" class="col-sm-8 blog-main">
-          <div class="blog-post">
-            <h1>Latest News</h1>
-            <p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>
-   
-            <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p>
-            
-            <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers and crew of flight CM9972:</p>
-            <ul>
-              <li><strong><p>From Panama 8000197</p></strong></li>
-              <li><strong><p>From Colombia 018007102179</p></strong></li>
-              <li><strong><p>From United States 8887057560</p></strong></li>
-              <li><strong><p>From Venezuela 08001009107</p></strong></li>
-              <li><strong><p>From Salvador 8006814</p></strong></li>
-              <li><strong><p>From Spain 900808890</p></strong></li>
-              <li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li>
-            </ul>
-            <p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. They are not intended for use by media.</p>
-            <p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters located in Urbanización Costa del Este in Panama.</p>
-          </div><!-- /.blog-post -->
+          <section id="blog-post" class="tab" ng-controller="TabController as tabCtr">
+  <h1>Corporate</h1>
+  <ul class="nav nav-tabs">
+    <li ng-class="{ active: tabCtr.isSet(1) }">
+      <a href ng-click="tabCtr.setTab(1)">Vision</a></li>
+    <li ng-class="{ active: tabCtr.isSet(2) }">
+      <a href ng-click="tabCtr.setTab(2)">History</a></li>
+    <li ng-class="{ active: tabCtr.isSet(3) }">
+      <a href ng-click="tabCtr.setTab(3)">Hub of Americas</a></li>
+    <li ng-class="{ active: tabCtr.isSet(4) }">
+      <a href ng-click="tabCtr.setTab(4)">Alliances</a></li>
+    <li ng-class="{ active: tabCtr.isSet(5) }">
+      <a href ng-click="tabCtr.setTab(5)">Fleet</a></li>
+  </ul>
+  <div ng-show="tabCtr.isSet(1)">
+    <h4>Vision</h4>
+    <p>To be the leading airline in Latin American aviation and the preferred connection through Panama by connecting the main cities in the North, South.</p>
+  </div>
+  <div ng-show="tabCtr.isSet(2)">
+    <h4>History</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div ng-show="tabCtr.isSet(3)">
+    <h4>Hub of Americas</h4>
+    <img src="../../img/HubdelasAmericas-v1.jpg">
+    <p>Copa Airlines' Hub of the Americas, one of the most successful connection centers in Latin America, located in Tocumen International Airport, offers the most direct way to connect to the Americas due to: Panama’s geographic location and favorable climate conditions allows the airport to operate 24 hours a day, 365 days a year. Fast connections without the need to clear immigration and customs. Two state of the art runways to ensure traffic is moving smoothly in and out.</p>
+  </div>
+  <div ng-show="tabCtr.isSet(4)">
+    <h4>Alliances</h4>
+    <p>Copa Airlines and its strategic partners work together to offer the highest quality service, convenience, and completion for your travel experience. Our code-share alliances allow us to offer you consistent service regardless of your final destination.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div ng-show="tabCtr.isSet(5)">
+    <h4>Fleet</h4>
+    
+    <p>In the last 5 years, Copa Holdings has invested on fleet more than of US$ 1.6 million. For 2010, forecast investment on fleet is US $525 million. We offer the most modern fleet in the region and in the world, with Boeing 737-700, Boeing 737-800, and Embraer 190AR aircraft.</p>
+
+      <article>
+        <h4>Boeing 737-700</h4>
+        <div class="col-xs-12 col-md-6 col-lg-6"><img src="../../img/boeing700.jpg"></div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p>Copa Airlines has 14 aircrafts.</p>
+          <p>Copa Airlines Colombia has 4 aircrafts.</p>
+          <p>12 seats in Business Class</p>
+          <p>112 seats in Main Cabin</p>
+          <a href="http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx">
+            <p>Technical details</p>
+          </a>
+          <a href="http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx">
+            <p>Entertainment on board</p>
+          </a>
+        </div>
+      </article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
 
         </div><!-- /.blog-main -->
 
       </div><!-- /.row -->
-      <footer>
+      <footer ng-show="menuCtr.width < 600">
         <div class="row footer-background">
           <div class="col-xs-6 footer-body" ng-repeat="list in menuCtr.menuBottom.lists track by list.id">
             <div class="footer-title">
@@ -129,6 +182,9 @@
         <div class="row" ng-include="'content/' + menuCtr.currentLang.value + '/copyright.html'"> 
         </div>
       </footer>
+      <footer 
+        ng-show="menuCtr.width > 600" 
+        ng-include="'content/' + menuCtr.currentLang.value + '/full-footer-ul.html'"></footer>
 
 
       </div> 

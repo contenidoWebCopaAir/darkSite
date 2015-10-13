@@ -54,7 +54,7 @@
 					{ text: 'Press Releases', url: 'content/en/press-releases-en.html' },
 					{ text: 'Contact Numbers', url: 'content/en/contact-numbers.html' },
 					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
-					{ text: 'Corporate', url: 'content/en/corporate.html' }
+					{ text: 'Corporate', url: 'content/en/corporate-tabs.html' }
 				]
 			},
 			es: {
@@ -150,13 +150,6 @@
 			this.menuBottom		= data.min_footer.en;
 			this.width 			= data.width;		//Ancho de la ventana
 
-
-			for( var key in this.menuBottom.lists ){
-				for( var obj in key ){
-					console.log(obj.title);
-				}
-			}
-
 			/**
 			* Selecciona el idioma deseado
 			**/
@@ -184,6 +177,17 @@
 			};
 
 	});
+
+	app.controller('TabController', function(){
+	  	this.tab = 1;
+	    this.setTab = function( tab ){
+	    	this.tab = tab;
+	    };
+	    
+	    this.isSet = function( value ){	
+	    	return this.tab === value;
+	    };
+  	});
 
 
 
