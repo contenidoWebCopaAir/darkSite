@@ -633,7 +633,11 @@ table.dataTable thead .sorting:after {
   background: linear-gradient(#c8c8c8, #999999); /* Standard syntax */  
 }
 
+.footer-nav { padding-left:15px; }
+
 .footer-title h3 { margin: 0 0 0 15px; }
+
+.row { margin: 0px }
 
 
 .blank { height: 60px; color:#fff; padding: 30px;  }
