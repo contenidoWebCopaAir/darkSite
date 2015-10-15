@@ -50,31 +50,28 @@
 			en: {
 				title: 'Aditional Info',
 				items: [
-					{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
+					{ text: 'Corporate', url: 'content/en/corporate-tabs.html' },
 					{ text: 'Press Releases', url: 'content/en/press-releases-en.html' },
-					{ text: 'Contact Numbers', url: 'content/en/contact-numbers.html' },
-					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
-					{ text: 'Corporate', url: 'content/en/corporate-tabs.html' }
+					{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
+					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' }
 				]
 			},
 			es: {
 				title: 'Información Adicional',
 				items: [
-					{ text: 'Ultimas Noticias', url: 'content/es/latest-news-en.html' },
+					{ text: 'Corporativo', url: 'content/es/corporate.html' },
 					{ text: 'Comunicados de Prensa', url: 'content/es/press-releases-en.html' },
-					{ text: 'Números de Contacto', url: 'content/es/contact-numbers.html' },
-					{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' },
-					{ text: 'Corporativo', url: 'content/es/corporate.html' }
+					{ text: 'Ultimas Noticias', url: 'content/es/latest-news-en.html' },
+					{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' }
 				]
 			},
 			pt: {
 				title: 'Informação Adicional',
 				items: [
-					{ text: 'Últimas Notícias', url: 'content/pt/latest-news-en.html' },
+					{ text: 'Corporativo', url: 'content/pt/corporate.html' },
 					{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases-en.html' },
-					{ text: 'Números de Contato', url: 'content/pt/contact-numbers.html' },
-					{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' },
-					{ text: 'Corporativo', url: 'content/pt/corporate.html' }
+					{ text: 'Últimas Notícias', url: 'content/pt/latest-news-en.html' },
+					{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' }
 				]
 			}
 		}, 
@@ -137,133 +134,49 @@
 		latestNews: {
 			en: {
 				title: 'Latest News',
-				text: '<p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), 
-						involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>
-			            <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely 
-			            injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all 
-			            crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p>
-			            <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers 
-			            and crew of flight CM9972:</p>
-			            <ul>
-			              <li><strong><p>From Panama 8000197</p></strong></li>
-			              <li><strong><p>From Colombia 018007102179</p></strong></li>
-			              <li><strong><p>From United States 8887057560</p></strong></li>
-			              <li><strong><p>From Venezuela 08001009107</p></strong></li>
-			              <li><strong><p>From Salvador 8006814</p></strong></li>
-			              <li><strong><p>From Spain 900808890</p></strong></li>
-			              <li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li>
-			            </ul>
-			            <p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. 
-			            They are not intended for use by media.</p>
-			            <p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. 
-			            Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters 
-			            located in Urbanización Costa del Este in Panama.</p>'
+				text: '<p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>   <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p> <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers and crew of flight CM9972:</p> <ul><li><strong><p>From Panama 8000197</p></strong></li><li><strong><p>From Colombia 018007102179</p></strong></li><li><strong><p>From United States 8887057560</p></strong></li><li><strong><p>From Venezuela 08001009107</p></strong></li><li><strong><p>From Salvador 8006814</p></strong></li><li><strong><p>From Spain 900808890</p></strong></li><li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li></ul><p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. They are not intended for use by media.</p><p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters located in Urbanización Costa del Este in Panama.</p>'
 			},
 			es: {
 				title: 'Notas de Prensa',
-				text: ' <h3>INFORMACIÓN IMPORTANTE DEL ESTADO DEL VUELO CM 9972</h3>
-                <p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines lamenta informar que el vuelo CM 9972, 
-                modelo EMB190 con matrícula HP-1540, objeto de un secuestro aéreo, sufrió una explosión en el momento de su 
-                aterrizaje en el Aeropuerto Internacional de Tocumen en la Ciudad de Panamá.</p>
-				<p>De manera preliminar, se conoce que de los 58 pasajeros y 5 tripulantes a bordo, hay 8 
-				heridos de gravedad, 10 heridos leves y 39 ilesos entre los cuales se encuentran los 3 presuntos secuestradores 
-				y todos los tripulantes. Por otro lado, lamentamos confirmar que hasta el momento se cuentan 5 fallecidos y un 
-				pasajero desaparecido.</p>
-				<p>Copa Airlines ha puesto a la disposición de los familiares de los pasajeros y tripulación 
-				del vuelo CM 9972 los siguientes números de teléfono sin costo:</p>
-				<p><strong>Desde Panamá 8000197<br/>
-				Desde Colombia  018007102179<br/>
-				Desde Estados Unidos 8887057560<br/>
-				Desde Venezuela 08001009107<br/>
-				Desde Salvador 8006814<br/>
-				Desde España 900808890<br/>
-				Desde Cuba 14073620632 (call collect)</strong>
-				</p>
-				<p>Estos números están disponibles 24 horas al día. Agradecemos a los medios de comunicación 
-				reservar estos números para los familiares de los pasajeros y tripulantes del vuelo CM 9972.</p>
-				<p>Para la atención especial a los medios de comunicación, Copa Airlines pone a disposición 
-				el Call center del Centro de Comunicaciones en Crisis: (+507) 304-2077. </p>
-				<p>Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local, 
-				en el auditorio de las oficinas generales de Copa Airlines, en la urbanización Costa del Este de la Ciudad de 
-				Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p>
-                <h3>COPA AIRLINES CONFIRMA SECUESTRO DE LA AERONAVE DEL VUELO CM 9972 CON RUTA BOGOTA – PANAMA EL DIA DE HOY</h3>
-                <p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines informa que su vuelo número CM9972 que operaba la ruta 
-                Bogotá – Panamá y que tiene código compartido con KLM, número KL900 aparentemente ha sido objeto de un secuestro 
-                aéreo desde las  12:51 p.m. del día de hoy mientras estaba en vuelo. El avión, modelo EMB190 con matrícula HP-1540, 
-                partió a las 10:45am hora local de Panamá, con hora estimada de aterrizaje a las 12:55pm hora local y transporta 58 
-                pasajeros y 5 tripulantes.</p>
-				<p>"Nos encontramos trabajando junto a las autoridades en el proceso de obtención de mayor información relacionada 
-				a los pasajeros y tripulantes a bordo del vuelo CM 9972. Nuestra principal prioridad es determinar su estado real 
-				y ofrecer información a la brevedad posible. Asimismo, estamos atendiendo a los familiares de los pasajeros, 
-				quienes están recibiendo todo nuestro apoyo y asistencia", dijo Pedro Heilbron, Presidente Ejecutivo de Copa Airlines.</p>
-				<p>Próximamente Copa Airlines publicará los números de teléfono de atención a los familiares de los pasajeros y 
-				tripulación del vuelo CM 9972. </p>
-				<p>En cuanto a la información relacionada a la investigación y al incidente en sí, la misma será provista y 
-				comunicada estrictamente por la Autoridad competente a medida que se confirme. Por su parte, Copa Airlines llevará 
-				a cabo una rueda de prensa a las 4:00pm hora local de Panama, en el Auditorio de sus Oficinas Generales en la 
-				urbanización Costa del Este, de la Ciudad de Panamá para informar sobre las acciones que está tomando en relación 
-				a esta situación.</p>
-				<div class="articleNews"></div>
-				<h3>COPA AIRLINES INFORMA SOBRE EL ESTADO DEL VUELO CM 9972 DEL DIA DE HOY</h3>
-                <p></p>
-                <p>PANAMÁ, (26 de noviembre de 2014) – El vuelo número CM9972 de Copa Airlines ha estado involucrado en un secuestro  
-                aéreo desde las  12:51 p.m. del día de hoy.  El avión, modelo EMB190, con matrícula HP-1540 operaba la ruta entre 
-                Bogotá y Panamá , despegó a las 10:40AM hora local de Panamá, transportaba 58 de pasajeros y 5 tripulantes.</p>
-				<p>En estos momentos la aerolínea se encuentra trabajando con las autoridades correspondientes y está en proceso 
-				de recopilar toda la información pertinente. La autoridad competente en Panamá divulgará más información al público  
-				a medida que se avance con las investigaciones.</p>'
-			},
+				text: '<h3>INFORMACIÓN IMPORTANTE DEL ESTADO DEL VUELO CM 9972</h3>' +
+                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines lamenta informar que el vuelo CM 9972,' + 
+                'modelo EMB190 con matrícula HP-1540, objeto de un secuestro aéreo, sufrió una explosión en el momento de su' + 
+                'aterrizaje en el Aeropuerto Internacional de Tocumen en la Ciudad de Panamá.</p>' +
+				'<p>De manera preliminar, se conoce que de los 58 pasajeros y 5 tripulantes a bordo, hay 8' + 
+				'heridos de gravedad, 10 heridos leves y 39 ilesos entre los cuales se encuentran los 3 presuntos secuestradores' + 
+				'y todos los tripulantes. Por otro lado, lamentamos confirmar que hasta el momento se cuentan 5 fallecidos y un' + 
+				'pasajero desaparecido.</p><p>Copa Airlines ha puesto a la disposición de los familiares de los pasajeros y tripulación' +
+				'del vuelo CM 9972 los siguientes números de teléfono sin costo:</p>' +
+				'<p><strong>Desde Panamá 8000197<br/>' +
+				'Desde Colombia  018007102179<br/>' +
+				'Desde Estados Unidos 8887057560<br/>' +
+				'Desde Venezuela 08001009107<br/>' +
+				'Desde Salvador 8006814<br/>' +
+				'Desde España 900808890<br/>' +
+				'Desde Cuba 14073620632 (call collect)</strong>' +
+				'</p><p>Estos números están disponibles 24 horas al día. Agradecemos a los medios de comunicación' + 
+				'reservar estos números para los familiares de los pasajeros y tripulantes del vuelo CM 9972.</p>' +
+				'<p>Para la atención especial a los medios de comunicación, Copa Airlines pone a disposición' + 
+				'el Call center del Centro de Comunicaciones en Crisis: (+507) 304-2077. </p>' +
+				'<p>Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local,' + 
+				'en el auditorio de las oficinas generales de Copa Airlines, en la urbanización Costa del Este de la Ciudad de' + 
+				'Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p>' +
+                '<h3>COPA AIRLINES CONFIRMA SECUESTRO DE LA AERONAVE DEL VUELO CM 9972 CON RUTA BOGOTA – PANAMA EL DIA DE HOY</h3>' +
+                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines informa que su vuelo número CM9972 que operaba la ruta' + 
+                'Bogotá – Panamá y que tiene código compartido con KLM, número KL900 aparentemente ha sido objeto de un secuestro' + 
+                'aéreo desde las  12:51 p.m. del día de hoy mientras estaba en vuelo. El avión, modelo EMB190 con matrícula HP-1540,' + 
+                'partió a las 10:45am hora local de Panamá, con hora estimada de aterrizaje a las 12:55pm hora local y transporta 58' +
+                'pasajeros y 5 tripulantes.</p> <p>Nos encontramos trabajando junto a las autoridades en el proceso de obtención de mayor información relacionada a los pasajeros y tripulantes a bordo del vuelo CM 9972. Nuestra principal prioridad es determinar su estado real y ofrecer información a la brevedad posible. Asimismo, estamos atendiendo a los familiares de los pasajeros, quienes están recibiendo todo nuestro apoyo y asistencia, dijo Pedro Heilbron, Presidente Ejecutivo de Copa Airlines.</p><p>Próximamente Copa Airlines publicará los números de teléfono de atención a los familiares de los pasajeros y tripulación del vuelo CM 9972. </p><p>En cuanto a la información relacionada a la investigación y al incidente en sí, la misma será provista y comunicada estrictamente por la Autoridad competente a medida que se confirme. Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local de Panama, en el Auditorio de sus Oficinas Generales en la urbanización Costa del Este, de la Ciudad de Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p><div class="articleNews"></div><h3>COPA AIRLINES INFORMA SOBRE EL ESTADO DEL VUELO CM 9972 DEL DIA DE HOY</h3><p></p><p>PANAMÁ, (26 de noviembre de 2014) – El vuelo número CM9972 de Copa Airlines ha estado involucrado en un secuestro aéreo desde las  12:51 p.m. del día de hoy.  El avión, modelo EMB190, con matrícula HP-1540 operaba la ruta entre Bogotá y Panamá , despegó a las 10:40AM hora local de Panamá, transportaba 58 de pasajeros y 5 tripulantes.</p><p>En estos momentos la aerolínea se encuentra trabajando con las autoridades correspondientes y está en proceso de recopilar toda la información pertinente. La autoridad competente en Panamá divulgará más información al público a medida que se avance con las investigaciones.</p>'
+            },
 			pt: {
 				title: 'Press Releases',
-				text: ' <h3>INFORMAÇÃO IMPORTANTE SOBRE O ESTADO DO VOO CM 9972</h3>
-                <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines lamenta informar que o voo CM 9972, 
-                modelo Embraer 190 com matricula HP-1540, objeto de um sequestro aéreo, sofreu uma explosão no momento de sua 
-                aterrissagem no Aeroporto Internacional de Tocumen, na Cidade do Panamá. </p>
-				<p>Preliminarmente, sabe-se que dos 58 passageiros e cinco tripulantes a bordo, existem oito 
-				feridos gravemente, dez que sofreram ferimentos leves e 39 ilesos, entre os quais se encontram os três 
-				sequestradores suspeitos e os demais tripulantes. Além disso, lamentamos confirmar que até este momento 
-				contam-se cinco mortes e um passageiro desaparecido.</p>
-				<p>Copa Airlines coloca a disposição dos familiares dos passageiros e tripulação do voo CM 9972, 
-				os seguintes números de telefone gratuito:</p>
-				<p><strong>Desde Panamá 8000197<br/>
-				Desde Colombia  018007102179<br/>
-				Desde Estados Unidos 8887057560<br/>
-				Desde Venezuela 08001009107<br/>
-				Desde Salvador 8006814<br/>
-				Desde España 900808890<br/>
-				Desde Cuba 14073620632 (call collect)</strong>
-				</p>
-				<p>Estes números estão disponíveis 24 horas por dia. Agradecemos aos meios de Comunicação que 
-				reservem estes números para os familiares dos passageiros e tripulantes do voo CM 9972. </p>
-				<p>Para atendimento especial aos meios de comunicação, a Copa Airlines coloca à disposição 
-				o call center da Central de Comunicações de Crises: (+507) 304-2077. </p>
-				<p>Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (hora local), 
-				no auditorio do escritorio central da Copa Airlines, na via Costa del Este na Cidade do Panamá, para informar 
-				sobre as ações que está tomando frente a esta situação.</p>
-                <h3>COPA AIRLINES CONFIRMA SEQUESTRO DA AERONAVE DE NÚMERI CM 9972 COM ROTA BOGOTÁ-PANAMÁ NO DIA DE HOJE</h3>
-                <p></p>
-                <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines informa que seu voo, de número CM 9972, que operava 
-                a rota Bogotá-Panamá e apresenta codeshare com a KLM, número KL 900, aparentemente foi objeto de um sequestro 
-                aéreo desde 12h51 do dia de hoje, durante o voo. A aeronave, modelo Embraer 190, com matrícula HP-1540, 
-                partiu às 10h45, hora local do Panamá, com aterrissagem estimada para 12h55, hora local, transportava 58 
-                passageiros e cinco tripulantes. </p>
-				<p>"Estamos trabalhando em conjunto com as autoridades no processo de obtenção de mais informações 
-				relacionadas aos passageiros e tripulantes a bordo do voo CM 9972. Nossa principal prioridade é determinar 
-				a situação atual e oferecer informações o mais rápido possível. Também estamos atendendo os familiares 
-				dos passageiros, que estão recebendo todo nosso apoio e assistência", informa Pedro Heilbron, presidente 
-				executivo da Copa Airlines.  </p>
-				<p>Em breve, a Copa Airlines divulgará os números de telefone para atendimento aos familiares dos passageiros 
-				e da tripulação do voo CM 9972. </p>
-				<p>Quanto a informações relacionadas à investigação do incidente, as mesmas serão coletadas e comunicadas 
-				estritamente pela autoridade competente, à medida que forem confirmadas. Da sua parte, a Copa Airlines 
-				promoverá uma coletiva de imprensa às 16h (horário local do Panamá), no auditório de seu escritório 
-				central na via Costa del Este, na Cidade do Panamá, para relatar as ações que está tomando frente a esta situação.</p>'
+				text: ' <h3>INFORMAÇÃO IMPORTANTE SOBRE O ESTADO DO VOO CM 9972</h3> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines lamenta informar que o voo CM 9972, modelo Embraer 190 com matricula HP-1540, objeto de um sequestro aéreo, sofreu uma explosão no momento de sua aterrissagem no Aeroporto Internacional de Tocumen, na Cidade do Panamá. </p><p>Preliminarmente, sabe-se que dos 58 passageiros e cinco tripulantes a bordo, existem oito feridos gravemente, dez que sofreram ferimentos leves e 39 ilesos, entre os quais se encontram os três sequestradores suspeitos e os demais tripulantes. Além disso, lamentamos confirmar que até este momento contam-se cinco mortes e um passageiro desaparecido.</p><p>Copa Airlines coloca a disposição dos familiares dos passageiros e tripulação do voo CM 9972, os seguintes números de telefone gratuito:</p><p><strong>Desde Panamá 8000197<br/>Desde Colombia  018007102179<br/>Desde Estados Unidos 8887057560<br/>Desde Venezuela 08001009107<br/>Desde Salvador 8006814<br/>Desde España 900808890<br/>Desde Cuba 14073620632 (call collect)</strong></p><p>Estes números estão disponíveis 24 horas por dia. Agradecemos aos meios de Comunicação que reservem estes números para os familiares dos passageiros e tripulantes do voo CM 9972. </p><p>Para atendimento especial aos meios de comunicação, a Copa Airlines coloca à disposição o call center da Central de Comunicações de Crises: (+507) 304-2077. </p><p>Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (hora local), no auditorio do escritorio central da Copa Airlines, na via Costa del Este na Cidade do Panamá, para informar sobre as ações que está tomando frente a esta situação.</p><h3>COPA AIRLINES CONFIRMA SEQUESTRO DA AERONAVE DE NÚMERI CM 9972 COM ROTA BOGOTÁ-PANAMÁ NO DIA DE HOJE</h3><p></p> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines informa que seu voo, de número CM 9972, que operava a rota Bogotá-Panamá e apresenta codeshare com a KLM, número KL 900, aparentemente foi objeto de um sequestro aéreo desde 12h51 do dia de hoje, durante o voo. A aeronave, modelo Embraer 190, com matrícula HP-1540, partiu às 10h45, hora local do Panamá, com aterrissagem estimada para 12h55, hora local, transportava 58 passageiros e cinco tripulantes. </p><p>"Estamos trabalhando em conjunto com as autoridades no processo de obtenção de mais informações relacionadas aos passageiros e tripulantes a bordo do voo CM 9972. Nossa principal prioridade é determinar a situação atual e oferecer informações o mais rápido possível. Também estamos atendendo os familiares dos passageiros, que estão recebendo todo nosso apoio e assistência", informa Pedro Heilbron, presidente executivo da Copa Airlines.  </p><p>Em breve, a Copa Airlines divulgará os números de telefone para atendimento aos familiares dos passageiros e da tripulação do voo CM 9972. </p><p>Quanto a informações relacionadas à investigação do incidente, as mesmas serão coletadas e comunicadas estritamente pela autoridade competente, à medida que forem confirmadas. Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (horário local do Panamá), no auditório de seu escritório central na via Costa del Este, na Cidade do Panamá, para relatar as ações que está tomando frente a esta situação.</p>'
 			}
 		},
 		history: {
 			en: {
 				title: 'Our History',
-				text: 'Copa Airlines was founded in 1947 as the national airline of Panama. It began operations with domestic flights to three cities in Panama on Douglas DC-3/C47 planes. By 1966, the airline boasted three weekly flights to San Jose, Costa Rica, which was its first international destination. In 1969, the first AVRO 748 was introduced for flights to Kingston in Jamaica, Managua in Nicaragua and Barranquilla in Colombia. In the 1970s, Medellin, Cartagena, San Salvador and Guatemala became part of the expanding network of destination cities. '
+				text: 'Copa Airlines was founded in 1947 as the national airline of Panama. It began operations with domestic flights to three cities in Panama on Douglas DC-3/C47 planes. By 1966, the airline boasted three weekly flights to San Jose, Costa Rica, which was its first international destination. In 1969, the first AVRO 748 was introduced for flights to Kingston in Jamaica, Managua in Nicaragua and Barranquilla in Colombia. In the 1970s, Medellin, Cartagena, San Salvador and Guatemala became part of the expanding network of destination cities.',
 				years: [
 					{
 						title: '1980',
@@ -273,8 +186,7 @@
 					{
 						title: '1992',
 						img: 'img/1992.jpg',
-						text: 'In 1992, it began operating from the first Panamanian headquarters for flights connecting within Latin America, creating the Hub of the Americas in the Tocumen International Airport.
-							Flights were added to Caracas in Venezuela, Mexico City, Santiago in Chile, Cali and Bogota in Colombia, Quito and Guayaquil in Ecuador, Lima in Peru, Buenos Aires in Argentina and Havana in Cuba.'
+						text: 'In 1992, it began operating from the first Panamanian headquarters for flights connecting within Latin America, creating the Hub of the Americas in the Tocumen International Airport. Flights were added to Caracas in Venezuela, Mexico City, Santiago in Chile, Cali and Bogota in Colombia, Quito and Guayaquil in Ecuador, Lima in Peru, Buenos Aires in Argentina and Havana in Cuba.'
 					},
 					{
 						title: '1998',
@@ -314,14 +226,12 @@
 					{
 						title: '2011',
 						img: 'img/2011.jpg',
-						text: 'Expands its Hub of the Americas in Panama from 4 to 6 flight banks and grows its network with 7 new destinations, solidifying the Hub of the Americas’ leadership position in the region.
-							Copa Holdings, S.A. (NYSE-Listed CPA) celebrates five years of trading.'
+						text: 'Expands its Hub of the Americas in Panama from 4 to 6 flight banks and grows its network with 7 new destinations, solidifying the Hub of the Americas’ leadership position in the region. Copa Holdings, S.A. (NYSE-Listed CPA) celebrates five years of trading.'
 					},
 					{
 						title: '2012',
 						img: 'img/2012.jpg',
-						text: 'Announces the new MileagePlus Frequent Flyer Program along with United Airlines and in June, formally joining the airlines global network, Star Alliance.
-							Starts its flight operations to Las Vegas, Recife, Curazao, Guanacaste, and Iquitos.'
+						text: 'Announces the new MileagePlus Frequent Flyer Program along with United Airlines and in June, formally joining the airlines global network, Star Alliance. Starts its flight operations to Las Vegas, Recife, Curazao, Guanacaste, and Iquitos.'
 					},
 					{
 						title: '2013',
@@ -348,8 +258,7 @@
 					{
 						title: '1992',
 						img: 'img/1992.jpg',
-						text: 'Inicia operaciones el primer centro de conexiones de vuelos dentro de Latinoamérica con sede en Panamá creando el “Hub de las Américas” en el Aeropuerto Internacional de Tocumen.
-								Se añaden los destinos de Caracas en Venezuela, Ciudad de México, Santiago de Chile, Cali y Bogotá en Colombia, Quito y Guayaquil en Ecuador, Lima en Perú, Buenos Aires en Argentina y La Habana en Cuba. '
+						text: 'Inicia operaciones el primer centro de conexiones de vuelos dentro de Latinoamérica con sede en Panamá creando el “Hub de las Américas” en el Aeropuerto Internacional de Tocumen. Se añaden los destinos de Caracas en Venezuela, Ciudad de México, Santiago de Chile, Cali y Bogotá en Colombia, Quito y Guayaquil en Ecuador, Lima en Perú, Buenos Aires en Argentina y La Habana en Cuba.'
 					},
 					{
 						title: '1998',
@@ -389,14 +298,12 @@
 					{
 						title: '2011',
 						img: 'img/2011.jpg',
-						text: 'Expande su Hub de las Américas en Panamá de 4 a 6 bancos de vuelo y crece su red de rutas con 7 nuevos destinos, solidificando así el liderazgo del Hub de las Américas en la región.
-						Copa Holdings, S.A. (CPA listado en NYSE) celebra cinco años de estar cotizando.'
+						text: 'Expande su Hub de las Américas en Panamá de 4 a 6 bancos de vuelo y crece su red de rutas con 7 nuevos destinos, solidificando así el liderazgo del Hub de las Américas en la región. Copa Holdings, S.A. (CPA listado en NYSE) celebra cinco años de estar cotizando.'
 					},
 					{
 						title: '2012',
 						img: 'img/2012.jpg',
-						text: 'Anuncia el nuevo programa de viajero frecuente MileagePlus en conjunto con United y en junio la entrada formal a la red global de aerolíneas Star Alliance.
-						Inicia operaciones a Las Vegas, Recife, Curazao, Guanacaste e Iquitos.'
+						text: 'Anuncia el nuevo programa de viajero frecuente MileagePlus en conjunto con United y en junio la entrada formal a la red global de aerolíneas Star Alliance. Inicia operaciones a Las Vegas, Recife, Curazao, Guanacaste e Iquitos.'
 					},
 					{
 						title: '2013',
@@ -423,8 +330,7 @@
 					{
 						title: '1992',
 						img: 'img/1992.jpg',
-						text: 'Em 1992, iniciou as operações do primeiro centro de conexões de voos dentro da América Latina, com sede no Panamá, criando desta forma o “Hub das Américas” no Aeroporto Internacional de Tocumen. 
-						Foram incorporados novos destinos: Caracas, Venezuela, Cidade do México, Santiago do Chile, Cali e Bogotá, Colômbia, Quito e Guayaquil, Equador, Lima, Peru, Buenos Aires, Argentina, e Havana, Cuba.'
+						text: 'Em 1992, iniciou as operações do primeiro centro de conexões de voos dentro da América Latina, com sede no Panamá, criando desta forma o “Hub das Américas” no Aeroporto Internacional de Tocumen. Foram incorporados novos destinos: Caracas, Venezuela, Cidade do México, Santiago do Chile, Cali e Bogotá, Colômbia, Quito e Guayaquil, Equador, Lima, Peru, Buenos Aires, Argentina, e Havana, Cuba.'
 					},
 					{
 						title: '1998',
@@ -464,14 +370,13 @@
 					{
 						title: '2011',
 						img: 'img/2011.jpg',
-						text: 'Expande seu Hub das Américas no Panamá de 4 bancos de voo para 6 e aumenta sua rede com mais 7 destinos, consolidando a posição de liderança do Hub das Américas na região.
-						Copa Holdings, S.A. (listada como CPA na NYSE) celebra cinco anos de negócios. '
+						text: 'Expande seu Hub das Américas no Panamá de 4 bancos de voo para 6 e aumenta sua rede com mais 7 destinos, consolidando a posição de liderança do Hub das Américas na região. Copa Holdings, S.A. (listada como CPA na NYSE) celebra cinco anos de negócios. '
 					},
 					{
 						title: '2012',
 						img: 'img/2012.jpg',
-						text: 'Anuncia o novo programa de viajante frequente MileagePlus em conjunto com a United e, em junto, a entrada formal à rede mundial de companhias aéreas Star Alliance.
-						Inicia operações a Las Vegas, Recife, Curazao, Guanacaste e Iquitos.'
+						text: 'Anuncia o novo programa de viajante frequente MileagePlus em conjunto com a United e, em junto, a entrada formal à rede mundial de companhias aéreas Star Alliance. Inicia operações a Las Vegas, Recife, Curazao, Guanacaste e Iquitos.'
+					},
 					{
 						title: '2013',
 						img: 'img/2013.jpg',
@@ -484,7 +389,101 @@
 					}
 				]
 			}
-		}
+		},
+		fleet: {
+			es:{
+				title: 'Flota',
+				fleets: [
+					{
+						id: 1,
+						title: 'Boeing 737-700',
+						text: 'Copa Airlines cuenta con 14 aeronaves. Copa Airlines Colombia cuenta con 4 aeronaves.',
+						img: 'img/boeing700.jpg',
+						business: '12 asientos en Clase Ejecutiva',
+						general: '112 asientos en Cabina Principal',
+						details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx' },
+						music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+					},
+					{
+						id: 2,
+						title: 'Boeing 737-800',
+						img: 'img/boeing800.jpg',
+						model: [
+							{
+								title: 'Modelo 737-800A',
+								text: '<p>Copa Airlines cuenta con 25 aeronaves.</p>',
+								business: '16 asientos en Clase Ejecutiva',
+								general: '144 asientos en Cabina Principal',
+								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-800a.aspx' },
+								music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Modelo 737-800B *',
+								text: '<p>Copa Airlines cuenta con 29 aeronaves.</p>',
+								business: '16 asientos en Clase Ejecutiva',
+								general: '138 asientos en Cabina Principal',
+								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-800b.aspx' },
+								music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+
+						]
+						
+					},
+					{
+						id: 3,
+						title: 'Embraer 190AR',
+						img: 'img/embraerAR.jpg',
+						model: [
+							{
+								title: 'Modelo Embraer 190AR A',
+								text: '<p>Copa Airlines cuenta con 12 aeronaves.<br>Copa Airlines Colombia cuenta con 3 aeronaves.</p>',
+								business: '10 asientos en Clase Ejecutiva',
+								general: '84 asientos en Cabina Principal',
+								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-embraer-190ar.aspx' },
+								music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Modelo Embraer 190AR B',
+								text: '<p>Copa Airlines cuenta con 11 aeronaves.</p>',
+								general: '106 asientos en Cabina Principal',
+								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-embraer-190ar-b.aspx' },
+								music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+
+						]
+					}
+				] //fleets
+			}, // es
+			en: {
+				title: 'Fleet'
+			},
+			pt: {
+				title: 'Frota'
+			}
+			
+		},
+		security: {
+			en: {
+				title: 'Security History'
+			},
+			es: {
+				title: 'Historial de Seguridad'
+			},
+			pt: {
+				title: 'Histórico de segurança'
+			}
+		},
+		hub: {
+			en: {
+				title: 'Hub of the Americas'
+			},
+			es: {
+				title: 'Hub de las Americas'
+			},
+			pt: {
+				title: 'Centro de Conexões das Américas'
+			}
+		} 
 	};
 	var app = angular.module('darkSite', []);
 
@@ -500,6 +499,10 @@
 			this.menuLeft 		= data.menu_left.en;
 			this.menuBottom		= data.min_footer.en;
 			this.width 			= data.width;		//Ancho de la ventana
+			this.history 		= data.history.en;
+			this.security 		= data.security.en;
+			this.fleet 			= data.fleet.en;
+			this.hub 			= data.hub.en;
 
 			/**
 			* Selecciona el idioma deseado
@@ -511,18 +514,32 @@
 						this.menuTop 	= data.menu_top.en;
 						this.menuLeft 	= data.menu_left.en;
 						this.navClass 	= 'nav-en';
+						this.history 	= data.history.en;
+						this.security 	= data.security.en;
+						this.fleet 		= data.fleet.en;
+						this.hub 		= data.hub.en;
+
 						break;
 					case 'es':
 						this.select		= data.select.es;		
 						this.menuTop 	= data.menu_top.es;
 						this.menuLeft 	= data.menu_left.es;
 						this.navClass 	= 'nav-es';
+						this.history 	= data.history.es;
+						this.security 	= data.security.es;
+						this.fleet 		= data.fleet.es;
+						this.hub 		= data.hub.es;
 						break;
 					case 'pt':
 						this.select		= data.select.pt;
 						this.menuTop 	= data.menu_top.pt;
 						this.menuLeft 	= data.menu_left.pt;
 						this.navClass 	= 'nav-pt';
+						this.history 	= data.history.pt;
+						this.fleet 		= data.fleet.pt;
+						this.security 	= data.security.pt;
+						this.fleet 		= data.fleet.pt;
+						this.hub 		= data.hub.pt;
 						break;
 				}
 			};
@@ -539,6 +556,30 @@
 	    	return this.tab === value;
 	    };
   	});
+
+  	app.controller('Tab2Controller', function(){
+	  	this.tab2 = 1;
+	    this.setTab = function( tab2 ){
+	    	this.tab2 = tab2;
+	    };
+	    
+	    this.isSet = function( value ){	
+	    	return this.tab2 === value;
+	    };
+  	});
+
+  	app.directive('a', function() {
+	    return {
+	        restrict: 'E',
+	        link: function(scope, elem, attrs) {
+	            if(attrs.ngClick || attrs.href === '' || attrs.href === '#'){
+	                elem.on('click', function(e){
+	                    e.preventDefault();
+	                });
+	            }
+	        }
+	   };
+	});
 
 
 

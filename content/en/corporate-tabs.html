@@ -1,23 +1,30 @@
-<section id="blog-post" class="tab" ng-controller="TabController as tabCtr">
+<section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
   <h1>Corporate</h1>
   <ul class="nav nav-tabs">
-    <li ng-class="{ active: tabCtr.isSet(1) }">
-      <a href ng-click="tabCtr.setTab(1)">Vision</a></li>
-    <li ng-class="{ active: tabCtr.isSet(2) }">
-      <a href ng-click="tabCtr.setTab(2)">History</a></li>
-    <li ng-class="{ active: tabCtr.isSet(3) }">
-      <a href ng-click="tabCtr.setTab(3)">Hub of Americas</a></li>
-    <li ng-class="{ active: tabCtr.isSet(4) }">
-      <a href ng-click="tabCtr.setTab(4)">Alliances</a></li>
-    <li ng-class="{ active: tabCtr.isSet(5) }">
-      <a href ng-click="tabCtr.setTab(5)">Fleet</a></li>
+   
+    <li ng-class="{ active: tab2Ctr.isSet(1) }">
+      <a href ng-click="tab2Ctr.setTab(1)">{{ menuCtr.history.title }}</a></li>
+    <li ng-class="{ active: tab2Ctr.isSet(2) }">
+      <a href ng-click="tab2Ctr.setTab(2)">{{ menuCtr.security.title }}</a></li>
+    <li ng-class="{ active: tab2Ctr.isSet(3) }">
+      <a href ng-click="tab2Ctr.setTab(3)">{{ menuCtr.fleet.title }}</a></li>
+    <li ng-class="{ active: tab2Ctr.isSet(4) }">
+      <a href ng-click="tab2Ctr.setTab(4)">{{ menuCtr.hub.title }}</a></li>
+    
   </ul>
-  <div ng-show="tabCtr.isSet(1)">
-    <h4>Vision</h4>
-    <p>To be the leading airline in Latin American aviation and the preferred connection through Panama by connecting the main cities in the North, South.</p>
+ 
+  <div ng-show="tab2Ctr.isSet(1)">
+    <h4>{{ menuCtr.history.title }}</h4>
+    <p>{{ menuCtr.history.text }}</p>
   </div>
-  <div ng-show="tabCtr.isSet(2)">
-    <h4>History</h4>
+  <div ng-show="tab2Ctr.isSet(2)">
+    <h4>{{ menuCtr.security.title }}</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -25,23 +32,12 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
-  <div ng-show="tabCtr.isSet(3)">
-    <h4>Hub of Americas</h4>
-    <img src="../../img/HubdelasAmericas-v1.jpg">
-    <p>Copa Airlines' Hub of the Americas, one of the most successful connection centers in Latin America, located in Tocumen International Airport, offers the most direct way to connect to the Americas due to: Panama’s geographic location and favorable climate conditions allows the airport to operate 24 hours a day, 365 days a year. Fast connections without the need to clear immigration and customs. Two state of the art runways to ensure traffic is moving smoothly in and out.</p>
+  <div ng-show="tab2Ctr.isSet(3)">
+    <h4>{{ menuCtr.fleet.title }}</h4>
+   
   </div>
-  <div ng-show="tabCtr.isSet(4)">
-    <h4>Alliances</h4>
-    <p>Copa Airlines and its strategic partners work together to offer the highest quality service, convenience, and completion for your travel experience. Our code-share alliances allow us to offer you consistent service regardless of your final destination.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div ng-show="tabCtr.isSet(5)">
-    <h4>Fleet</h4>
+  <div ng-show="tab2Ctr.isSet(4)">
+    <h4>{{ menuCtr.hub.title }}</h4>
     
     <p>In the last 5 years, Copa Holdings has invested on fleet more than of US$ 1.6 million. For 2010, forecast investment on fleet is US $525 million. We offer the most modern fleet in the region and in the world, with Boeing 737-700, Boeing 737-800, and Embraer 190AR aircraft.</p>
 
