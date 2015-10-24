@@ -26,6 +26,7 @@ p, a { font-family:"Calibri W01 Regular 904604"; font-size: 14px; line-height: 1
 p { color: #333; }
 a { color: #666; }
 ul > li { list-style: none; }
+ul.news-list { margin-bottom: 20px; margin-top: 20px; }
 
 body {
   padding-top: 20px;
@@ -51,10 +52,10 @@ img { width:100%; }
 }
 
 .navbar-default .navbar-nav>li>a {
-	background: -webkit-linear-gradient(#005CA7, #00369A); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#005CA7, #00369A); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#005CA7, #00369A); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#005CA7, #00369A); /* Standard syntax */
+  background: -webkit-linear-gradient(#005CA7, #00369A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#005CA7, #00369A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#005CA7, #00369A); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#005CA7, #00369A); /* Standard syntax */
   border-right: 0.7px solid #666;
 }
 
@@ -83,30 +84,30 @@ img { width:100%; }
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	background: -webkit-linear-gradient(#1472bc, #144aae); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#1472bc, #144aae); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#1472bc, #144aae); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#1472bc, #144aae); /* Standard syntax */
+  background: -webkit-linear-gradient(#1472bc, #144aae); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#1472bc, #144aae); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#1472bc, #144aae); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#1472bc, #144aae); /* Standard syntax */
 }
 
 .navbar-default .navbar-nav>li:nth-last-child(1)>a {
-	background: -webkit-linear-gradient(#50AFF8, #5085EA); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#50AFF8, #5085EA); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#50AFF8, #5085EA); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#50AFF8, #5085EA); /* Standard syntax */
+  background: -webkit-linear-gradient(#50AFF8, #5085EA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#50AFF8, #5085EA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#50AFF8, #5085EA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#50AFF8, #5085EA); /* Standard syntax */
 }
 
 .navbar-default .navbar-nav>li:nth-last-child(1)>a:hover {
-	background: -webkit-linear-gradient(#64c3ff, #6699ff); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#64c3ff, #6699ff); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#64c3ff, #6699ff); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#64c3ff, #6699ff); /* Standard syntax */
+  background: -webkit-linear-gradient(#64c3ff, #6699ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#64c3ff, #6699ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#64c3ff, #6699ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#64c3ff, #6699ff); /* Standard syntax */
 }
 
 
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
-	color: #FFF;
+  color: #FFF;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
@@ -117,10 +118,10 @@ img { width:100%; }
 #navbar { border:none; background-color: white; }
 
 @media (min-width: 1200px){
-	.container {
-	    width: 970px;
-	}
-	
+  .container {
+      width: 970px;
+  }
+  
 }
 
 /*** Glog Styles ***/
@@ -259,10 +260,10 @@ footer { margin-top: 40px; }
 }
 
 table thead {
-	background: -webkit-linear-gradient(#c8c8c8, #999999); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#c8c8c8, #999999); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#c8c8c8, #999999); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#c8c8c8, #999999); /* Standard syntax */	
+  background: -webkit-linear-gradient(#c8c8c8, #999999); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#c8c8c8, #999999); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#c8c8c8, #999999); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#c8c8c8, #999999); /* Standard syntax */  
 }
      
 table thead tr th, table tbody tr td { text-align: center; }
@@ -274,6 +275,40 @@ table tbody { background-color: #efefef; }
 @media screen and (max-width: 767px)
 .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
     white-space: normal;
+}
+
+article { 
+  adding-top:10px; 
+  padding-bottom: 10px;
+}
+img.history-img { margin-top: 23px; }
+img.fleet-img { margin-bottom: 25px; }
+.fleet-icon { width: 25px; }
+@media(min-width: 980px){
+  img.fleet2model { width:70%; }
+}
+
+/** Tabs **/
+
+.nav-tabs>li>a {
+  background-color: #A4A4A4;
+  color:#fff;
+}
+.nav-tabs>li>a:hover {
+  color: #004982;
+}
+
+@media(max-width: 856px){
+  .nav-tabs>li>a{
+    padding: 10px 5px;
+  }
+}
+
+@media(max-width: 520px){
+  .nav-tabs>li{
+    float:none;
+    margin-bottom: 2px;
+  }
 }
 
 /*** SB-Admin ***/

@@ -80,10 +80,10 @@
                   <a href="#"><i class="fa fa-book fa-2"></i> {{ menuCtr.menuLeft.title }} <span class="fa arrow"></span></a>
                   <ul class="nav nav-second-level">
                     <li>
-                      <a href="{{ menuCtr.menuLeft.items[0].url }}" ng-click="tabCtr.setTab(1)">{{ menuCtr.menuLeft.items[0].text }}</a>
-                      <a href="{{ menuCtr.menuLeft.items[1].url }}" ng-click="tabCtr.setTab(2)">{{ menuCtr.menuLeft.items[1].text }}</a>
                       <a href="{{ menuCtr.menuLeft.items[2].url }}" ng-click="tabCtr.setTab(3)">{{ menuCtr.menuLeft.items[2].text }}</a>
+                      <a href="{{ menuCtr.menuLeft.items[1].url }}" ng-click="tabCtr.setTab(2)">{{ menuCtr.menuLeft.items[1].text }}</a>
                       <a href="{{ menuCtr.menuLeft.items[3].url }}" ng-click="tabCtr.setTab(4)">{{ menuCtr.menuLeft.items[3].text }}</a>
+                      <a href="{{ menuCtr.menuLeft.items[0].url }}" ng-click="tabCtr.setTab(1)">{{ menuCtr.menuLeft.items[0].text }}</a>
                     </li>
                   </ul><!-- /.nav-second-level -->
                 </li>
@@ -95,75 +95,78 @@
         <div id="content" class="col-sm-8 blog-main">
           <div ng-show="tabCtr.isSet(1)">
             <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
-  <h1>Corporate</h1>
-  <ul class="nav nav-tabs">
-   
-    <li ng-class="{ active: tab2Ctr.isSet(1) }">
-      <a href ng-click="tab2Ctr.setTab(1)">{{ menuCtr.history.title }}</a></li>
-    <li ng-class="{ active: tab2Ctr.isSet(2) }">
-      <a href ng-click="tab2Ctr.setTab(2)">{{ menuCtr.security.title }}</a></li>
-    <li ng-class="{ active: tab2Ctr.isSet(3) }">
-      <a href ng-click="tab2Ctr.setTab(3)">{{ menuCtr.fleet.title }}</a></li>
-    <li ng-class="{ active: tab2Ctr.isSet(4) }">
-      <a href ng-click="tab2Ctr.setTab(4)">{{ menuCtr.hub.title }}</a></li>
-    
-  </ul>
- 
-  <div ng-show="tab2Ctr.isSet(1)">
-    <h4>{{ menuCtr.history.title }}</h4>
-    <p>{{ menuCtr.history.text }}</p>
-  </div>
-  <div ng-show="tab2Ctr.isSet(2)">
-    <h4>{{ menuCtr.security.title }}</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div ng-show="tab2Ctr.isSet(3)">
-    <h4>{{ menuCtr.fleet.title }}</h4>
-   
-  </div>
-  <div ng-show="tab2Ctr.isSet(4)">
-    <h4>{{ menuCtr.hub.title }}</h4>
-    
-    <p>In the last 5 years, Copa Holdings has invested on fleet more than of US$ 1.6 million. For 2010, forecast investment on fleet is US $525 million. We offer the most modern fleet in the region and in the world, with Boeing 737-700, Boeing 737-800, and Embraer 190AR aircraft.</p>
+              <h1>Corporate</h1>
+              <ul class="nav nav-tabs">
+               
+                <li ng-class="{ active: tab2Ctr.isSet(1) }">
+                  <a href ng-click="tab2Ctr.setTab(1)">{{ menuCtr.history.title }}</a></li>
+                <li ng-class="{ active: tab2Ctr.isSet(2) }">
+                  <a href ng-click="tab2Ctr.setTab(2)">{{ menuCtr.security.title }}</a></li>
+                <li ng-class="{ active: tab2Ctr.isSet(3) }">
+                  <a href ng-click="tab2Ctr.setTab(3)">{{ menuCtr.fleet.title }}</a></li>
+                <li ng-class="{ active: tab2Ctr.isSet(4) }">
+                  <a href ng-click="tab2Ctr.setTab(4)">{{ menuCtr.hub.title }}</a></li>
+                
+              </ul>
+             
+              <div ng-show="tab2Ctr.isSet(1)">
+                <h4>{{ menuCtr.history.title }}</h4>
+                <p>{{ menuCtr.history.text }}</p>
+                <article ng-repeat="year in menuCtr.history.years">
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <img ng-src="{{ year.img }}" class="history-img">
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-6">
+                    <h2>{{ year.title }}</h2>
+                    <p>{{ year.text }}</p>
+                  </div>
+                </article>
+              </div>
+              <div ng-show="tab2Ctr.isSet(2)">
+                <h4>{{ menuCtr.security.title }}</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div ng-show="tab2Ctr.isSet(3)">
+                <h4>{{ menuCtr.fleet.title }}</h4>
+               
+              </div>
+              <div ng-show="tab2Ctr.isSet(4)">
+                <h4>{{ menuCtr.hub.title }}</h4>
+                
+                <p>In the last 5 years, Copa Holdings has invested on fleet more than of US$ 1.6 million. For 2010, forecast investment on fleet is US $525 million. We offer the most modern fleet in the region and in the world, with Boeing 737-700, Boeing 737-800, and Embraer 190AR aircraft.</p>
 
-      <article>
-        <h4>Boeing 737-700</h4>
-        <div class="col-xs-12 col-md-6 col-lg-6"><img src="../../img/boeing700.jpg"></div>
-        <div class="col-xs-12 col-md-6 col-lg-6">
-          <p>Copa Airlines has 14 aircrafts.</p>
-          <p>Copa Airlines Colombia has 4 aircrafts.</p>
-          <p>12 seats in Business Class</p>
-          <p>112 seats in Main Cabin</p>
-          <a href="http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx">
-            <p>Technical details</p>
-          </a>
-          <a href="http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx">
-            <p>Entertainment on board</p>
-          </a>
-        </div>
-      </article>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</section>
+                  <article>
+                    <h4>Boeing 737-700</h4>
+                    <div class="col-xs-12 col-md-6 col-lg-6"><img src="../../img/boeing700.jpg"></div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <p>Copa Airlines has 14 aircrafts.</p>
+                      <p>Copa Airlines Colombia has 4 aircrafts.</p>
+                      <p>12 seats in Business Class</p>
+                      <p>112 seats in Main Cabin</p>
+                      <a href="http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx">
+                        <p>Technical details</p>
+                      </a>
+                      <a href="http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx">
+                        <p>Entertainment on board</p>
+                      </a>
+                    </div>
+                  </article>
+              </div>
+            </section>
 
           </div>
-          <div ng-include="'content/' + menuCtr.currentLang.value + '/press-releases-en.html'" ng-show="tabCtr.isSet(2)"></div>
+          <div ng-include="'content/' + menuCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
           <div ng-include="'content/' + menuCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
           <div ng-include="'content/' + menuCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
         </div><!-- /.blog-main -->
