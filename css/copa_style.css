@@ -291,6 +291,7 @@ img.fleet-img { margin-bottom: 25px; }
 .logo_hub { width: 50%; margin-bottom: 10px; }
 .img_hub { width:100%; margin-bottom: 20px; }
 
+.hub_list { margin-top:10px; }
 .hub_list > li { list-style: square; }
 
 /** Tabs **/
@@ -677,7 +678,7 @@ table.dataTable thead .sorting:after {
 
 .footer-nav { padding-left:15px; }
 
-.footer-title h3 { margin: 0 0 0 15px; }
+.footer-title h3 { margin: 0 0 0 15px; color:black; }
 
 .row { margin: 0px }
 
