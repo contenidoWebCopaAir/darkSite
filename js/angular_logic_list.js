@@ -51,7 +51,7 @@
 				title: 'Aditional Info',
 				items: [
 					{ text: 'Corporate', url: 'content/en/corporate-tabs.html' },
-					{ text: 'Press Releases', url: 'content/en/press-releases-en.html' },
+					{ text: 'Press Releases', url: 'content/en/press-releases.html' },
 					{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
 					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' }
 				]
@@ -60,8 +60,8 @@
 				title: 'Información Adicional',
 				items: [
 					{ text: 'Corporativo', url: 'content/es/corporate.html' },
-					{ text: 'Comunicados de Prensa', url: 'content/es/press-releases-en.html' },
-					{ text: 'Ultimas Noticias', url: 'content/es/latest-news-en.html' },
+					{ text: 'Comunicados de Prensa', url: 'content/es/press-releases.html' },
+					{ text: 'Ultimas Noticias', url: 'content/es/latestNews.html' },
 					{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' }
 				]
 			},
@@ -69,8 +69,8 @@
 				title: 'Informação Adicional',
 				items: [
 					{ text: 'Corporativo', url: 'content/pt/corporate.html' },
-					{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases-en.html' },
-					{ text: 'Últimas Notícias', url: 'content/pt/latest-news-en.html' },
+					{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases.html' },
+					{ text: 'Últimas Notícias', url: 'content/pt/latest-news.html' },
 					{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' }
 				]
 			}
@@ -91,8 +91,7 @@
 							{ label: 'Flight Status', url: 'http://www.copaair.com/sites/CC/en/flight-information/Pages/flightstatus.aspx' },
 							{ label: 'Timetables', url: 'http://www.copaair.com/sites/CC/en/flight-information/Pages/timetables.aspx' },
 							{ label: 'Flight Notifications', url: 'http://www.copaair.com/sites/cc/en/Pages/FlightNotifications.aspx' },
-							{ label: 'Onboard', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/Durante-el-Vuelo.aspx' },
-							{ label: 'Options for checking in for your flight', url: 'http://www.copaair.com/sites/CC/en/servicios/Pages/opciones-registro.aspx' }
+							{ label: 'Onboard', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/Durante-el-Vuelo.aspx' }
 						] 
 					},
 					{
@@ -104,56 +103,59 @@
 							{ label: 'Baggage Claim', url: 'http://www.copaair.com/sites/CC/en/Acerca-de-Copa-Airlines/Pages/formulario-reclamo-equipaje.aspx' },
 							{ label: 'Report your forgotten item', url: 'http://www.copaair.com/sites/CC/en/Acerca-de-Copa-Airlines/Pages/formulario-articulos-olvidados.aspx' },
 							{ label: 'Comments / Complains', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
-							{ label: 'Electronic declaration of Goods (Brazil)', url: 'http://www.copaair.com/sites/CC/en/impuestos/Pages/declaracion-porte-valores-br.aspx' }
+							{ label: 'Electronic declaration of Goods (Brazil)', url: 'http://www.copaair.com/sites/CC/en/impuestos/Pages/declaracion-porte-valores-br.aspx' },
+							{ label: 'Affidavit for Travel to Cuba', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/declaracion-jurada-de-viajes-a-cuba.aspx' },
+							{ label: 'Law No. 20.831 of Chile', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/ley-num-20-831-de-chile.aspx' },
+							{ label: 'Our Customer Commitment', url: 'http://www.copaair.com/sites/cc/en/acerca-de-copa-airlines/pages/compromiso-con-el-pasajero.aspx' },
+							{ label: 'Digital receipt for tax purposes (Mexico)', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/comprobante-fiscal-digital-mexico.aspx' }
 						]
 					}
 				]
 				
 			},
 			es: {
-				lists:[
-						{
-						id: 1,							
-						title: 'Información de Vuelo',
+				lists: [
+					{
+						id: 1,
+						title: 'Información de Vuelos',
 						items: [
-							{ label: 'Equipaje', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx' },
+							{ label: 'Equipaje', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx'  },
 							{ label: 'Viajando con mascotas', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/Mascotas.aspx' },
 							{ label: 'Cargos de equipaje y servicios', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/tarifas-equipaje-y-de-servicios-opcionales.aspx' },
 							{ label: 'A dónde volamos', url: 'http://www.copaair.com/sites/CC/es/flight-information/Pages/routemap.aspx' },
-							{ label: 'Requisitos migratorios', url: 'http://www.copaair.com/sites/cc/es/Pages/timatic.aspx' },
-							{ label: 'Asistencia Especial', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/Servicios-Especiales-para-Pasajeros.aspx' },
+							{ label: 'Requisitos migratorios', url: 'http://www.copaair.com/sites/cc/ES/Pages/timatic.aspx' },
+							{ label: 'Asistencia especial', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/Servicios-Especiales-para-Pasajeros.aspx' },
 							{ label: 'Estado de vuelos', url: 'http://www.copaair.com/sites/CC/es/flight-information/Pages/flightstatus.aspx' },
 							{ label: 'Itinerarios', url: 'http://www.copaair.com/sites/CC/es/flight-information/Pages/timetables.aspx' },
-							{ label: 'Notificaciones de Vuelo', url: 'http://www.copaair.com/sites/cc/es/Pages/FlightNotifications.aspx' },
+							{ label: 'Notificaciones de vuelo', url: 'http://www.copaair.com/sites/cc/ES/Pages/FlightNotifications.aspx' },
 							{ label: 'A bordo', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/Durante-el-Vuelo.aspx' },
-							{ label: 'Opciones de registro para su vuelo', url: 'http://www.copaair.com/sites/CC/es/servicios/Pages/opciones-registro.aspx' }
-						] 
+							{ label: 'Opciones de registro', url: 'http://www.copaair.com/sites/CC/es/servicios/Pages/opciones-registro.aspx' }
+						]
 					},
 					{
 						id: 2,
 						title: 'Atención al pasajero',
 						items: [
-							{ label: 'Contáctenos', url: 'http://www.copaair.com/sites/CC/es/Nuestros-Productos/Pages/seguro-de-viaje.aspx' },
+							{ label: 'Contáctenos', url: 'http://www.copaair.com/sites/CC/es/Acerca-de-Copa-Airlines/Pages/Contactenos.aspx' },
 							{ label: 'Solicite un reembolso', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/Reembolsos.aspx' },
-							{ label: 'Reclamo de Equipaje', url: 'http://www.copaair.com/sites/CC/es/Acerca-de-Copa-Airlines/Pages/formulario-reclamo-equipaje.aspx' },
+							{ label: 'Reclamo de equipaje', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
 							{ label: 'Reporte su artículo olvidado', url: 'http://www.copaair.com/sites/CC/es/Acerca-de-Copa-Airlines/Pages/formulario-articulos-olvidados.aspx' },
-							{ label: 'Sugerencias y Reclamos', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
+							{ label: 'Sugerencias y reclamos', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
 							{ label: 'Declaración electrónica de bienes (Brasil)', url: 'http://www.copaair.com/sites/CC/es/impuestos/Pages/declaracion-porte-valores-br.aspx' },
 							{ label: 'Ley No. 20.831 de Chile', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/ley-num-20-831-de-chile.aspx' },
 							{ label: 'Declaración jurada de viajes a Cuba', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/declaracion-jurada-de-viajes-a-cuba.aspx' },
 							{ label: 'Desistimiento y retracto', url: 'http://www.copaair.com/sites/CC/es/Acerca-de-Copa-Airlines/Pages/desistimiento-y-retracto-co.aspx' },
-							{ label: 'Nuestro compromiso con el cliente', url: 'http://www.copaair.com/sites/cc/es/acerca-de-copa-airlines/pages/compromiso-con-el-pasajero.aspx' },
+							{ label: 'Nuestro Compromiso con el cliente', url: 'http://www.copaair.com/sites/cc/es/acerca-de-copa-airlines/pages/compromiso-con-el-pasajero.aspx' },
 							{ label: 'Comprobante fiscal digital (México)', url: 'http://www.copaair.com/sites/CC/es/informacion-de-viaje/Pages/comprobante-fiscal-digital-mexico.aspx' }
-
 						]
 					}
-				]
-				
-			}, 
+
+				] 
+			},
 			pt: {
-				lists:[
-						{
-						id: 1,							
+				lists: [
+					{
+						id: 1,
 						title: 'Informações de voos',
 						items: [
 							{ label: 'Bagagem', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx' },
@@ -167,27 +169,26 @@
 							{ label: 'Notificação de voo', url: 'http://www.copaair.com/sites/cc/pt/Pages/FlightNotifications.aspx' },
 							{ label: 'A bordo', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/Durante-el-Vuelo.aspx' },
 							{ label: 'Opções de registro para seu voo', url: 'http://www.copaair.com/sites/CC/pt/servicios/Pages/opciones-registro.aspx' }
-						] 
+						]
 					},
-					{
+					{ 
 						id: 2,
 						title: 'Atendimento ao cliente',
 						items: [
-							{ label: 'Fale conosco', url: 'http://www.copaair.com/sites/CC/pt/Nuestros-Productos/Pages/seguro-de-viaje.aspx' },
-							{ label: 'Solicitar um reembolso', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/Reembolsos.aspx' },
-							{ label: 'Retirada de Bagagem', url: 'http://www.copaair.com/sites/CC/pt/Acerca-de-Copa-Airlines/Pages/formulario-reclamo-equipaje.aspx' },
+							{ label: 'Fale conosco', url: 'http://www.copaair.com/sites/CC/pt/Acerca-de-Copa-Airlines/Pages/Contactenos.aspx' },
+							{ label: 'Solicitar um reembolso', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/reembolsos.aspx' },
+							{ label: 'Retirada de Bagagem', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
 							{ label: 'Informe seu item esquecido', url: 'http://www.copaair.com/sites/CC/pt/Acerca-de-Copa-Airlines/Pages/formulario-articulos-olvidados.aspx' },
-							{ label: 'Sugestões e reclamações', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
+							{ label: 'Sugestões e reclamações', url:'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/atencion-pasajero.aspx' },
 							{ label: 'Declaração Eletrônica de Bens (Brasil)', url: 'http://www.copaair.com/sites/CC/pt/impuestos/Pages/declaracion-porte-valores-br.aspx' },
 							{ label: 'Desistência e arrependimento', url: 'http://www.copaair.com/sites/CC/pt/Acerca-de-Copa-Airlines/Pages/desistimiento-y-retracto-co.aspx' },
 							{ label: 'Nosso compromisso com o cliente', url: 'http://www.copaair.com/sites/cc/pt/acerca-de-copa-airlines/pages/compromiso-con-el-pasajero.aspx' },
 							{ label: 'Comprovante fiscal digital (México)', url: 'http://www.copaair.com/sites/CC/pt/informacion-de-viaje/Pages/comprobante-fiscal-digital-mexico.aspx' }
-
 						]
 					}
 				]
-				
-			}
+			} 
+			
 		},
 		full_footer: {
 			en: {
@@ -210,7 +211,48 @@
 				]
 			}
 		},
-		
+		latestNews: {
+			en: {
+				title: 'Latest News',
+				text: '<p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>   <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p> <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers and crew of flight CM9972:</p> <ul><li><strong><p>From Panama 8000197</p></strong></li><li><strong><p>From Colombia 018007102179</p></strong></li><li><strong><p>From United States 8887057560</p></strong></li><li><strong><p>From Venezuela 08001009107</p></strong></li><li><strong><p>From Salvador 8006814</p></strong></li><li><strong><p>From Spain 900808890</p></strong></li><li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li></ul><p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. They are not intended for use by media.</p><p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters located in Urbanización Costa del Este in Panama.</p>'
+			},
+			es: {
+				title: 'Notas de Prensa',
+				text: '<h3>INFORMACIÓN IMPORTANTE DEL ESTADO DEL VUELO CM 9972</h3>' +
+                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines lamenta informar que el vuelo CM 9972,' + 
+                'modelo EMB190 con matrícula HP-1540, objeto de un secuestro aéreo, sufrió una explosión en el momento de su' + 
+                'aterrizaje en el Aeropuerto Internacional de Tocumen en la Ciudad de Panamá.</p>' +
+				'<p>De manera preliminar, se conoce que de los 58 pasajeros y 5 tripulantes a bordo, hay 8' + 
+				'heridos de gravedad, 10 heridos leves y 39 ilesos entre los cuales se encuentran los 3 presuntos secuestradores' + 
+				'y todos los tripulantes. Por otro lado, lamentamos confirmar que hasta el momento se cuentan 5 fallecidos y un' + 
+				'pasajero desaparecido.</p><p>Copa Airlines ha puesto a la disposición de los familiares de los pasajeros y tripulación' +
+				'del vuelo CM 9972 los siguientes números de teléfono sin costo:</p>' +
+				'<p><strong>Desde Panamá 8000197<br/>' +
+				'Desde Colombia  018007102179<br/>' +
+				'Desde Estados Unidos 8887057560<br/>' +
+				'Desde Venezuela 08001009107<br/>' +
+				'Desde Salvador 8006814<br/>' +
+				'Desde España 900808890<br/>' +
+				'Desde Cuba 14073620632 (call collect)</strong>' +
+				'</p><p>Estos números están disponibles 24 horas al día. Agradecemos a los medios de comunicación' + 
+				'reservar estos números para los familiares de los pasajeros y tripulantes del vuelo CM 9972.</p>' +
+				'<p>Para la atención especial a los medios de comunicación, Copa Airlines pone a disposición' + 
+				'el Call center del Centro de Comunicaciones en Crisis: (+507) 304-2077. </p>' +
+				'<p>Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local,' + 
+				'en el auditorio de las oficinas generales de Copa Airlines, en la urbanización Costa del Este de la Ciudad de' + 
+				'Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p>' +
+                '<h3>COPA AIRLINES CONFIRMA SECUESTRO DE LA AERONAVE DEL VUELO CM 9972 CON RUTA BOGOTA – PANAMA EL DIA DE HOY</h3>' +
+                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines informa que su vuelo número CM9972 que operaba la ruta' + 
+                'Bogotá – Panamá y que tiene código compartido con KLM, número KL900 aparentemente ha sido objeto de un secuestro' + 
+                'aéreo desde las  12:51 p.m. del día de hoy mientras estaba en vuelo. El avión, modelo EMB190 con matrícula HP-1540,' + 
+                'partió a las 10:45am hora local de Panamá, con hora estimada de aterrizaje a las 12:55pm hora local y transporta 58' +
+                'pasajeros y 5 tripulantes.</p> <p>Nos encontramos trabajando junto a las autoridades en el proceso de obtención de mayor información relacionada a los pasajeros y tripulantes a bordo del vuelo CM 9972. Nuestra principal prioridad es determinar su estado real y ofrecer información a la brevedad posible. Asimismo, estamos atendiendo a los familiares de los pasajeros, quienes están recibiendo todo nuestro apoyo y asistencia, dijo Pedro Heilbron, Presidente Ejecutivo de Copa Airlines.</p><p>Próximamente Copa Airlines publicará los números de teléfono de atención a los familiares de los pasajeros y tripulación del vuelo CM 9972. </p><p>En cuanto a la información relacionada a la investigación y al incidente en sí, la misma será provista y comunicada estrictamente por la Autoridad competente a medida que se confirme. Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local de Panama, en el Auditorio de sus Oficinas Generales en la urbanización Costa del Este, de la Ciudad de Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p><div class="articleNews"></div><h3>COPA AIRLINES INFORMA SOBRE EL ESTADO DEL VUELO CM 9972 DEL DIA DE HOY</h3><p></p><p>PANAMÁ, (26 de noviembre de 2014) – El vuelo número CM9972 de Copa Airlines ha estado involucrado en un secuestro aéreo desde las  12:51 p.m. del día de hoy.  El avión, modelo EMB190, con matrícula HP-1540 operaba la ruta entre Bogotá y Panamá , despegó a las 10:40AM hora local de Panamá, transportaba 58 de pasajeros y 5 tripulantes.</p><p>En estos momentos la aerolínea se encuentra trabajando con las autoridades correspondientes y está en proceso de recopilar toda la información pertinente. La autoridad competente en Panamá divulgará más información al público a medida que se avance con las investigaciones.</p>'
+            },
+			pt: {
+				title: 'Press Releases',
+				text: ' <h3>INFORMAÇÃO IMPORTANTE SOBRE O ESTADO DO VOO CM 9972</h3> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines lamenta informar que o voo CM 9972, modelo Embraer 190 com matricula HP-1540, objeto de um sequestro aéreo, sofreu uma explosão no momento de sua aterrissagem no Aeroporto Internacional de Tocumen, na Cidade do Panamá. </p><p>Preliminarmente, sabe-se que dos 58 passageiros e cinco tripulantes a bordo, existem oito feridos gravemente, dez que sofreram ferimentos leves e 39 ilesos, entre os quais se encontram os três sequestradores suspeitos e os demais tripulantes. Além disso, lamentamos confirmar que até este momento contam-se cinco mortes e um passageiro desaparecido.</p><p>Copa Airlines coloca a disposição dos familiares dos passageiros e tripulação do voo CM 9972, os seguintes números de telefone gratuito:</p><p><strong>Desde Panamá 8000197<br/>Desde Colombia  018007102179<br/>Desde Estados Unidos 8887057560<br/>Desde Venezuela 08001009107<br/>Desde Salvador 8006814<br/>Desde España 900808890<br/>Desde Cuba 14073620632 (call collect)</strong></p><p>Estes números estão disponíveis 24 horas por dia. Agradecemos aos meios de Comunicação que reservem estes números para os familiares dos passageiros e tripulantes do voo CM 9972. </p><p>Para atendimento especial aos meios de comunicação, a Copa Airlines coloca à disposição o call center da Central de Comunicações de Crises: (+507) 304-2077. </p><p>Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (hora local), no auditorio do escritorio central da Copa Airlines, na via Costa del Este na Cidade do Panamá, para informar sobre as ações que está tomando frente a esta situação.</p><h3>COPA AIRLINES CONFIRMA SEQUESTRO DA AERONAVE DE NÚMERI CM 9972 COM ROTA BOGOTÁ-PANAMÁ NO DIA DE HOJE</h3><p></p> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines informa que seu voo, de número CM 9972, que operava a rota Bogotá-Panamá e apresenta codeshare com a KLM, número KL 900, aparentemente foi objeto de um sequestro aéreo desde 12h51 do dia de hoje, durante o voo. A aeronave, modelo Embraer 190, com matrícula HP-1540, partiu às 10h45, hora local do Panamá, com aterrissagem estimada para 12h55, hora local, transportava 58 passageiros e cinco tripulantes. </p><p>"Estamos trabalhando em conjunto com as autoridades no processo de obtenção de mais informações relacionadas aos passageiros e tripulantes a bordo do voo CM 9972. Nossa principal prioridade é determinar a situação atual e oferecer informações o mais rápido possível. Também estamos atendendo os familiares dos passageiros, que estão recebendo todo nosso apoio e assistência", informa Pedro Heilbron, presidente executivo da Copa Airlines.  </p><p>Em breve, a Copa Airlines divulgará os números de telefone para atendimento aos familiares dos passageiros e da tripulação do voo CM 9972. </p><p>Quanto a informações relacionadas à investigação do incidente, as mesmas serão coletadas e comunicadas estritamente pela autoridade competente, à medida que forem confirmadas. Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (horário local do Panamá), no auditório de seu escritório central na via Costa del Este, na Cidade do Panamá, para relatar as ações que está tomando frente a esta situação.</p>'
+			}
+		},
 		history: {
 			en: {
 				title: 'Our History',
@@ -428,28 +470,49 @@
 				]
 			}
 		},
+		single_fleet: {
+			es: {
+					title: 'Boeing 737-700',
+					caCount: 'Copa Airlines cuenta con 14 aeronaves.',
+					cacCount: 'Copa Airlines Colombia cuenta con 4 aeronaves.',
+					img: 'img/boeing700.jpg',
+					business: '12 asientos en Clase Ejecutiva',
+					general: '112 asientos en Cabina Principal',
+					details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx' },
+					music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+			},
+			en:{
+					title: 'Boeing 737-700',
+					caCount: 'Copa Airlines has 14 aircrafts.',
+					cacCount: 'Copa Airlines Colombia has 4 aircrafts.',
+					img: 'img/boeing700.jpg',
+					business: '12 seats in Business Class',
+					general: '112 seats in Main Cabin',
+					details: { label: 'Technical details', url: 'http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx' },
+					music: { label: 'Entertainment on board', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+			},
+			pt: {
+				title: 'Boeing 737-700',
+				caCount: 'A Copa Airlines conta com 14 aviões.',
+				cacCount: 'A Copa Airlines Colombia conta com 4 aviões.',
+				img: 'img/boeing700.jpg',
+				business: '12 assentos na Classe Executiva',
+				general: '112 assentos na Cabine Principal',
+				details: { label: 'Detalhes técnicos', url: 'http://www.copaair.com/sites/cc/pt/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx' },
+				music: { label: 'Entretenimento a bordo', url: 'http://www.copaair.com/sites/cc/pt/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+			}
+		},
 		fleet: {
 			es:{
 				title: 'Flota',
 				fleets: [
 					{
-						id: 1,
-						title: 'Boeing 737-700',
-						text: 'Copa Airlines cuenta con 14 aeronaves. Copa Airlines Colombia cuenta con 4 aeronaves.',
-						img: 'img/boeing700.jpg',
-						business: '12 asientos en Clase Ejecutiva',
-						general: '112 asientos en Cabina Principal',
-						details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-700.aspx' },
-						music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
-					},
-					{
-						id: 2,
 						title: 'Boeing 737-800',
 						img: 'img/boeing800.jpg',
 						model: [
 							{
 								title: 'Modelo 737-800A',
-								text: '<p>Copa Airlines cuenta con 25 aeronaves.</p>',
+								caCount: 'Copa Airlines cuenta con 25 aeronaves.',
 								business: '16 asientos en Clase Ejecutiva',
 								general: '144 asientos en Cabina Principal',
 								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-800a.aspx' },
@@ -457,7 +520,7 @@
 							},
 							{
 								title: 'Modelo 737-800B *',
-								text: '<p>Copa Airlines cuenta con 29 aeronaves.</p>',
+								caCount: 'Copa Airlines cuenta con 29 aeronaves.',
 								business: '16 asientos en Clase Ejecutiva',
 								general: '138 asientos en Cabina Principal',
 								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-boeing-737-800b.aspx' },
@@ -468,13 +531,13 @@
 						
 					},
 					{
-						id: 3,
 						title: 'Embraer 190AR',
 						img: 'img/embraerAR.jpg',
 						model: [
 							{
 								title: 'Modelo Embraer 190AR A',
-								text: '<p>Copa Airlines cuenta con 12 aeronaves.<br>Copa Airlines Colombia cuenta con 3 aeronaves.</p>',
+								caCount: 'Copa Airlines cuenta con 12 aeronaves.',
+								cacCount: 'Copa Airlines Colombia cuenta con 3 aeronaves.',
 								business: '10 asientos en Clase Ejecutiva',
 								general: '84 asientos en Cabina Principal',
 								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-embraer-190ar.aspx' },
@@ -482,7 +545,7 @@
 							},
 							{
 								title: 'Modelo Embraer 190AR B',
-								text: '<p>Copa Airlines cuenta con 11 aeronaves.</p>',
+								caCount: 'Copa Airlines cuenta con 11 aeronaves.',
 								general: '106 asientos en Cabina Principal',
 								details: { label: 'Detalles técnicos', url: 'http://www.copaair.com/sites/cc/es/nuestros-productos/pages/detalles-tecnicos-embraer-190ar-b.aspx' },
 								music: { label: 'Entretenimiento a bordo', url: 'http://www.copaair.com/sites/cc/es/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
@@ -493,10 +556,106 @@
 				] //fleets
 			}, // es
 			en: {
-				title: 'Fleet'
+				title: 'Fleet',
+				fleets: [
+					{
+						id: 2,
+						title: 'Boeing 737-800',
+						img: 'img/boeing800.jpg',
+						model: [
+							{
+								title: 'Model 737-800A',
+								caCount: 'Copa Airlines has 25 aircrafts.',
+								business: '16 seats in Business Class',
+								general: '144 seats in Main Cabin',
+								details: { label: 'Technical details', url: 'http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-800a.aspx' },
+								music: { label: 'Entertainment on board', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Model 737-800B *',
+								caCount: 'Copa Airlines has 29 aircrafts.',
+								business: '16 seats in Business Class',
+								general: '138 seats in Main Cabin',
+								details: { label: 'Technical details', url: 'http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-boeing-737-800b.aspx' },
+								music: { label: 'Entertainment on board', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+						]
+					},
+					{
+						id: 3,
+						title: 'Embraer 190AR',
+						img: 'img/embraerAR.jpg',
+						model: [
+							{
+								title: 'Model Embraer 190AR A',
+								caCount: 'Copa Airlines has 12 aircrafts.',
+								cacCount: 'Copa Airlines Colombia has 3 aircrafts.',
+								business: '10 seats in business class',
+								general: '84 seats in Main cabin',
+								details: { label: 'Technical details', url: 'http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-embraer-190ar.aspx' },
+								music: { label: 'In-Flight information', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Model Embraer 190AR B',
+								caCount: 'Copa Airlines has 11 aircrafts.',
+								general: '106 seats in Main cabin',
+								details: { label: 'Technical details', url: 'http://www.copaair.com/sites/cc/en/nuestros-productos/pages/detalles-tecnicos-embraer-190ar-b.aspx' },
+								music: { label: 'In-Flight information', url: 'http://www.copaair.com/sites/cc/en/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+
+						]
+					}
+				]
 			},
 			pt: {
-				title: 'Frota'
+				title: 'Frota',
+				fleets: [
+					{
+						title: 'Boeing 737-800',
+						img: 'img/boeing800.jpg',
+						model: [
+							{
+								title: 'Model 737-800A',
+								caCount: 'A Copa Airlines conta com 25 aviões.',
+								business: '16 assentos na Classe Executiva',
+								general: '144 assentos na Cabine Principal',
+								details: { label: 'Detalhes técnicos', url: 'http://www.copaair.com/sites/cc/pt/nuestros-productos/pages/detalles-tecnicos-boeing-737-800a.aspx' },
+								music: { label: 'Entretenimento a bordo', url: 'http://www.copaair.com/sites/cc/pt/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Model 737-800B *',
+								caCount: 'A Copa Airlines conta com 29 aviões.',
+								business: '16 assentos na Classe Executiva',
+								general: '138 assentos na Cabine Principal',
+								details: { label: 'Detalhes técnicos', url: 'http://www.copaair.com/sites/cc/pt/nuestros-productos/pages/detalles-tecnicos-boeing-737-800b.aspx' },
+								music: { label: 'Entretenimento a bordo', url: 'http://www.copaair.com/sites/cc/pt/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+						]
+					},
+					{
+						title: 'Embraer 190AR',
+						img: 'img/embraerAR.jpg',
+						model: [
+							{
+								title: 'Model Embraer 190AR A',
+								caCount: 'A Copa Airlines conta com 12 aviões.',
+								cacCount: 'A Copa Airlines Colombia conta com 3 aviões.',
+								business: '10 assentos na Classe Executiva',
+								general: '84 assentos na Cabine Principal',
+								details: { label: 'Detalhes técnicos', url: 'http://www.copaair.com/sites/cc/pt/nuestros-productos/pages/detalles-tecnicos-embraer-190ar.aspx' },
+								music: { label: 'Informações a bordo', url: 'http://www.copaair.com/sites/cc/pt/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							},
+							{
+								title: 'Model Embraer 190AR B',
+								caCount: 'A Copa Airlines conta com 11 aviões.',
+								general: '106 assentos na Cabine Principal',
+								details: { label: 'Detalhes técnicos', url: 'http://www.copaair.com/sites/cc/pt/nuestros-productos/pages/detalles-tecnicos-embraer-190ar-b.aspx' },
+								music: { label: 'Informações a bordo', url: 'http://www.copaair.com/sites/cc/pt/informacion-de-viaje/pages/durante-el-vuelo.aspx' }
+							}
+
+						]
+					}
+				]
 			}
 			
 		},
@@ -525,22 +684,21 @@
 	};
 	var app = angular.module('darkSite', []);
 
-	app.controller('MenuController', function(){
-			//El idioma por defecto sera el inglés
-			this.currentLang 	= { value:'en', label: 'English' };
+	app.controller('ContentController', function(){
 
-			// Clase del menú principal
-			this.navClass 		= 'nav-en';
-
-			this.select 		= data.select.en;
-			this.menuTop 		= data.menu_top.en;
-			this.menuLeft 		= data.menu_left.en;
-			this.menuBottom		= data.min_footer.en;
+			//Carga los valores por defecto
+			this.currentLang 	= { value:'es', label: 'Español' };
+			this.navClass 		= 'nav-es';
+			this.select 		= data.select.es;
+			this.menuTop 		= data.menu_top.es;
+			this.menuLeft 		= data.menu_left.es;
+			this.menuBottom		= data.min_footer.es;
 			this.width 			= data.width;		//Ancho de la ventana
-			this.history 		= data.history.en;
-			this.security 		= data.security.en;
-			this.fleet 			= data.fleet.en;
-			this.hub 			= data.hub.en;
+			this.history 		= data.history.es;
+			this.security 		= data.security.es;
+			this.fleet 			= data.fleet.es;
+			this.singleFleet 	= data.single_fleet.es;
+			this.hub 			= data.hub.es;
 
 			/**
 			* Selecciona el idioma deseado
@@ -555,8 +713,8 @@
 						this.history 	= data.history.en;
 						this.security 	= data.security.en;
 						this.fleet 		= data.fleet.en;
+						this.singleFleet 	= data.single_fleet.en;
 						this.hub 		= data.hub.en;
-						this.menuBottom	= data.min_footer.en;
 
 						break;
 					case 'es':
@@ -567,8 +725,8 @@
 						this.history 	= data.history.es;
 						this.security 	= data.security.es;
 						this.fleet 		= data.fleet.es;
+						this.singleFleet 	= data.single_fleet.es;
 						this.hub 		= data.hub.es;
-						this.menuBottom	= data.min_footer.es;
 						break;
 					case 'pt':
 						this.select		= data.select.pt;
@@ -579,14 +737,15 @@
 						this.fleet 		= data.fleet.pt;
 						this.security 	= data.security.pt;
 						this.fleet 		= data.fleet.pt;
+						this.singleFleet 	= data.single_fleet.pt;
 						this.hub 		= data.hub.pt;
-						this.menuBottom	= data.min_footer.pt;
 						break;
 				}
 			};
 
 	});
 
+	// Menu left
 	app.controller('TabController', function(){
 	  	this.tab = 3;
 	    this.setTab = function( tab ){
@@ -598,6 +757,7 @@
 	    };
   	});
 
+	// Corporate
   	app.controller('Tab2Controller', function(){
 	  	this.tab2 = 1;
 	    this.setTab = function( tab2 ){
@@ -609,6 +769,7 @@
 	    };
   	});
 
+  	// Desactiva los links
   	app.directive('a', function() {
 	    return {
 	        restrict: 'E',

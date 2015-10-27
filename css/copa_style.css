@@ -288,7 +288,14 @@ img.fleet-img { margin-bottom: 25px; }
   img.fleet2model { width:70%; }
 }
 
+.logo_hub { width: 50%; margin-bottom: 10px; }
+.img_hub { width:100%; margin-bottom: 20px; }
+
+.hub_list > li { list-style: square; }
+
 /** Tabs **/
+
+.nav-tabs { margin-bottom: 20px; }
 
 .nav-tabs>li>a {
   background-color: #A4A4A4;
