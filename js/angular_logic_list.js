@@ -50,7 +50,7 @@
 			en: {
 				title: 'Aditional Info',
 				items: [
-					{ text: 'Corporate', url: 'content/en/corporate-tabs.html' },
+					{ text: 'About Copa Airlines', url: 'content/en/corporate-tabs.html' },
 					{ text: 'Press Releases', url: 'content/en/press-releases.html' },
 					{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
 					{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' }
@@ -59,7 +59,7 @@
 			es: {
 				title: 'Información Adicional',
 				items: [
-					{ text: 'Corporativo', url: 'content/es/corporate.html' },
+					{ text: 'Acerca de Copa Airlines', url: 'content/es/corporate.html' },
 					{ text: 'Comunicados de Prensa', url: 'content/es/press-releases.html' },
 					{ text: 'Ultimas Noticias', url: 'content/es/latestNews.html' },
 					{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' }
@@ -68,7 +68,7 @@
 			pt: {
 				title: 'Informação Adicional',
 				items: [
-					{ text: 'Corporativo', url: 'content/pt/corporate.html' },
+					{ text: 'Acerca de Copa Airlines', url: 'content/pt/corporate.html' },
 					{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases.html' },
 					{ text: 'Últimas Notícias', url: 'content/pt/latest-news.html' },
 					{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' }
@@ -211,48 +211,7 @@
 				]
 			}
 		},
-		latestNews: {
-			en: {
-				title: 'Latest News',
-				text: '<p>PANAMA (Nov. 26, 2014) – Copa Airlines regrets to inform that flight CM9972, aircraft model EMB190 (HP-1540), involved in a hijack incident, suffered an explosion upon landing at Tocumen International Airport in Panama City.</p>   <p>Preliminarily information shows that out of the 58 passengers and 5 crew members on board, there are 8 severely injured passengers, 10 minor injuries, and 39 uninjured passengers among which are 3 suspected kidnappers and all crew members. We also regret to confirm that as of now there are 5 fatalities and one missing passenger.</p> <p>Copa Airlines has made the following toll-free telephone numbers available to the families of the passengers and crew of flight CM9972:</p> <ul><li><strong><p>From Panama 8000197</p></strong></li><li><strong><p>From Colombia 018007102179</p></strong></li><li><strong><p>From United States 8887057560</p></strong></li><li><strong><p>From Venezuela 08001009107</p></strong></li><li><strong><p>From Salvador 8006814</p></strong></li><li><strong><p>From Spain 900808890</p></strong></li><li><strong><p>From Cuba 14073620632 (call collect)</p></strong></li></ul><p>These numbers will be available for exclusive use by family members of passengers and crew 24 hours/day. They are not intended for use by media.</p><p>Media may call the Copa Airlines Crisis Communications Call Center: (+507) 304-2077. Copa Airlines will conduct a news conference at 4 p.m., local Panama time in the Auditorium of its Headquarters located in Urbanización Costa del Este in Panama.</p>'
-			},
-			es: {
-				title: 'Notas de Prensa',
-				text: '<h3>INFORMACIÓN IMPORTANTE DEL ESTADO DEL VUELO CM 9972</h3>' +
-                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines lamenta informar que el vuelo CM 9972,' + 
-                'modelo EMB190 con matrícula HP-1540, objeto de un secuestro aéreo, sufrió una explosión en el momento de su' + 
-                'aterrizaje en el Aeropuerto Internacional de Tocumen en la Ciudad de Panamá.</p>' +
-				'<p>De manera preliminar, se conoce que de los 58 pasajeros y 5 tripulantes a bordo, hay 8' + 
-				'heridos de gravedad, 10 heridos leves y 39 ilesos entre los cuales se encuentran los 3 presuntos secuestradores' + 
-				'y todos los tripulantes. Por otro lado, lamentamos confirmar que hasta el momento se cuentan 5 fallecidos y un' + 
-				'pasajero desaparecido.</p><p>Copa Airlines ha puesto a la disposición de los familiares de los pasajeros y tripulación' +
-				'del vuelo CM 9972 los siguientes números de teléfono sin costo:</p>' +
-				'<p><strong>Desde Panamá 8000197<br/>' +
-				'Desde Colombia  018007102179<br/>' +
-				'Desde Estados Unidos 8887057560<br/>' +
-				'Desde Venezuela 08001009107<br/>' +
-				'Desde Salvador 8006814<br/>' +
-				'Desde España 900808890<br/>' +
-				'Desde Cuba 14073620632 (call collect)</strong>' +
-				'</p><p>Estos números están disponibles 24 horas al día. Agradecemos a los medios de comunicación' + 
-				'reservar estos números para los familiares de los pasajeros y tripulantes del vuelo CM 9972.</p>' +
-				'<p>Para la atención especial a los medios de comunicación, Copa Airlines pone a disposición' + 
-				'el Call center del Centro de Comunicaciones en Crisis: (+507) 304-2077. </p>' +
-				'<p>Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local,' + 
-				'en el auditorio de las oficinas generales de Copa Airlines, en la urbanización Costa del Este de la Ciudad de' + 
-				'Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p>' +
-                '<h3>COPA AIRLINES CONFIRMA SECUESTRO DE LA AERONAVE DEL VUELO CM 9972 CON RUTA BOGOTA – PANAMA EL DIA DE HOY</h3>' +
-                '<p>PANAMÁ, (26 de Noviembre de 2014) – Copa Airlines informa que su vuelo número CM9972 que operaba la ruta' + 
-                'Bogotá – Panamá y que tiene código compartido con KLM, número KL900 aparentemente ha sido objeto de un secuestro' + 
-                'aéreo desde las  12:51 p.m. del día de hoy mientras estaba en vuelo. El avión, modelo EMB190 con matrícula HP-1540,' + 
-                'partió a las 10:45am hora local de Panamá, con hora estimada de aterrizaje a las 12:55pm hora local y transporta 58' +
-                'pasajeros y 5 tripulantes.</p> <p>Nos encontramos trabajando junto a las autoridades en el proceso de obtención de mayor información relacionada a los pasajeros y tripulantes a bordo del vuelo CM 9972. Nuestra principal prioridad es determinar su estado real y ofrecer información a la brevedad posible. Asimismo, estamos atendiendo a los familiares de los pasajeros, quienes están recibiendo todo nuestro apoyo y asistencia, dijo Pedro Heilbron, Presidente Ejecutivo de Copa Airlines.</p><p>Próximamente Copa Airlines publicará los números de teléfono de atención a los familiares de los pasajeros y tripulación del vuelo CM 9972. </p><p>En cuanto a la información relacionada a la investigación y al incidente en sí, la misma será provista y comunicada estrictamente por la Autoridad competente a medida que se confirme. Por su parte, Copa Airlines llevará a cabo una rueda de prensa a las 4:00pm hora local de Panama, en el Auditorio de sus Oficinas Generales en la urbanización Costa del Este, de la Ciudad de Panamá para informar sobre las acciones que está tomando en relación a esta situación.</p><div class="articleNews"></div><h3>COPA AIRLINES INFORMA SOBRE EL ESTADO DEL VUELO CM 9972 DEL DIA DE HOY</h3><p></p><p>PANAMÁ, (26 de noviembre de 2014) – El vuelo número CM9972 de Copa Airlines ha estado involucrado en un secuestro aéreo desde las  12:51 p.m. del día de hoy.  El avión, modelo EMB190, con matrícula HP-1540 operaba la ruta entre Bogotá y Panamá , despegó a las 10:40AM hora local de Panamá, transportaba 58 de pasajeros y 5 tripulantes.</p><p>En estos momentos la aerolínea se encuentra trabajando con las autoridades correspondientes y está en proceso de recopilar toda la información pertinente. La autoridad competente en Panamá divulgará más información al público a medida que se avance con las investigaciones.</p>'
-            },
-			pt: {
-				title: 'Press Releases',
-				text: ' <h3>INFORMAÇÃO IMPORTANTE SOBRE O ESTADO DO VOO CM 9972</h3> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines lamenta informar que o voo CM 9972, modelo Embraer 190 com matricula HP-1540, objeto de um sequestro aéreo, sofreu uma explosão no momento de sua aterrissagem no Aeroporto Internacional de Tocumen, na Cidade do Panamá. </p><p>Preliminarmente, sabe-se que dos 58 passageiros e cinco tripulantes a bordo, existem oito feridos gravemente, dez que sofreram ferimentos leves e 39 ilesos, entre os quais se encontram os três sequestradores suspeitos e os demais tripulantes. Além disso, lamentamos confirmar que até este momento contam-se cinco mortes e um passageiro desaparecido.</p><p>Copa Airlines coloca a disposição dos familiares dos passageiros e tripulação do voo CM 9972, os seguintes números de telefone gratuito:</p><p><strong>Desde Panamá 8000197<br/>Desde Colombia  018007102179<br/>Desde Estados Unidos 8887057560<br/>Desde Venezuela 08001009107<br/>Desde Salvador 8006814<br/>Desde España 900808890<br/>Desde Cuba 14073620632 (call collect)</strong></p><p>Estes números estão disponíveis 24 horas por dia. Agradecemos aos meios de Comunicação que reservem estes números para os familiares dos passageiros e tripulantes do voo CM 9972. </p><p>Para atendimento especial aos meios de comunicação, a Copa Airlines coloca à disposição o call center da Central de Comunicações de Crises: (+507) 304-2077. </p><p>Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (hora local), no auditorio do escritorio central da Copa Airlines, na via Costa del Este na Cidade do Panamá, para informar sobre as ações que está tomando frente a esta situação.</p><h3>COPA AIRLINES CONFIRMA SEQUESTRO DA AERONAVE DE NÚMERI CM 9972 COM ROTA BOGOTÁ-PANAMÁ NO DIA DE HOJE</h3><p></p> <p>PANAMÁ, (26 de novembro de 2014) – A Copa Airlines informa que seu voo, de número CM 9972, que operava a rota Bogotá-Panamá e apresenta codeshare com a KLM, número KL 900, aparentemente foi objeto de um sequestro aéreo desde 12h51 do dia de hoje, durante o voo. A aeronave, modelo Embraer 190, com matrícula HP-1540, partiu às 10h45, hora local do Panamá, com aterrissagem estimada para 12h55, hora local, transportava 58 passageiros e cinco tripulantes. </p><p>"Estamos trabalhando em conjunto com as autoridades no processo de obtenção de mais informações relacionadas aos passageiros e tripulantes a bordo do voo CM 9972. Nossa principal prioridade é determinar a situação atual e oferecer informações o mais rápido possível. Também estamos atendendo os familiares dos passageiros, que estão recebendo todo nosso apoio e assistência", informa Pedro Heilbron, presidente executivo da Copa Airlines.  </p><p>Em breve, a Copa Airlines divulgará os números de telefone para atendimento aos familiares dos passageiros e da tripulação do voo CM 9972. </p><p>Quanto a informações relacionadas à investigação do incidente, as mesmas serão coletadas e comunicadas estritamente pela autoridade competente, à medida que forem confirmadas. Da sua parte, a Copa Airlines promoverá uma coletiva de imprensa às 16h (horário local do Panamá), no auditório de seu escritório central na via Costa del Este, na Cidade do Panamá, para relatar as ações que está tomando frente a esta situação.</p>'
-			}
-		},
+		
 		history: {
 			en: {
 				title: 'Our History',

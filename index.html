@@ -78,11 +78,20 @@
               <ul class="nav" id="side-menu">
                 <li class="active">
                   <a href="#"><i class="fa fa-book fa-2"></i> {{ contentCtr.menuLeft.title }} <span class="fa arrow"></span></a>
+                  
+                  <!-- Menu Left -->
                   <ul class="nav nav-second-level">
                     <li>
+                      <!-- Latest News -->
                       <a href="{{ contentCtr.menuLeft.items[2].url }}" ng-click="tabCtr.setTab(3)">{{ contentCtr.menuLeft.items[2].text }}</a>
+
+                      <!-- Press Releases -->
                       <a href="{{ contentCtr.menuLeft.items[1].url }}" ng-click="tabCtr.setTab(2)">{{ contentCtr.menuLeft.items[1].text }}</a>
+                      
+                      <!-- Assistance to Family -->
                       <a href="{{ contentCtr.menuLeft.items[3].url }}" ng-click="tabCtr.setTab(4)">{{ contentCtr.menuLeft.items[3].text }}</a>
+                      
+                      <!-- Corporate -->
                       <a href="{{ contentCtr.menuLeft.items[0].url }}" ng-click="tabCtr.setTab(1)">{{ contentCtr.menuLeft.items[0].text }}</a>
                     </li>
                   </ul><!-- /.nav-second-level -->
@@ -96,19 +105,32 @@
           <div ng-show="tabCtr.isSet(1)">
             <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
               
+              <!-- Corporate Tabs -->
               <ul class="nav nav-tabs">
                
+                <!-- History -->
                 <li ng-class="{ active: tab2Ctr.isSet(1) }">
-                  <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a></li>
+                  <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
+                </li>
+                
+                <!-- Security -->
                 <li ng-class="{ active: tab2Ctr.isSet(2) }">
-                  <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a></li>
+                  <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
+                </li>
+                
+                <!-- Fleet -->
                 <li ng-class="{ active: tab2Ctr.isSet(3) }">
-                  <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a></li>
+                  <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
+                </li>
+                
+                <!-- Hub -->
                 <li ng-class="{ active: tab2Ctr.isSet(4) }">
-                  <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a></li>
+                  <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
+                </li>
                 
               </ul>
              
+              <!-- History -->
               <div ng-show="tab2Ctr.isSet(1)">
                 <h4>{{ contentCtr.history.title }}</h4>
                 <p>{{ contentCtr.history.text }}</p>
@@ -122,6 +144,8 @@
                   </div>
                 </article>
               </div>
+              
+              <!-- Security -->
               <div ng-show="tab2Ctr.isSet(2)">
                 <h4>{{ contentCtr.security.title }}</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -137,6 +161,8 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
+
+              <!-- Fleet -->
               <div ng-show="tab2Ctr.isSet(3)">
                <article>
                  <div class="col-xs-12 col-md-12 col-lg-12">
@@ -188,12 +214,11 @@
                  </div>
                  
                </article>
-                           
               </div>
+
+              <!-- Hub -->
               <div ng-show="tab2Ctr.isSet(4)">
-                
                 <article ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
-                
               </div>
             </section>
 
