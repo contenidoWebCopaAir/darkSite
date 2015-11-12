@@ -22,8 +22,8 @@
 			en: [
 				{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
 				{ text: 'Press Releases', url: 'content/en/press-releases.html' },
-				{ text: 'About Copa Airlines', url: 'content/en/corporate-tabs.html' },
 				{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
+				{ text: 'About Copa Airlines', url: 'content/en/corporate-tabs.html' },
 				{ text: 'Copa.com', url: 'http://www.copa.com/'}
 			],
 			es: [

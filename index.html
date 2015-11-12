@@ -56,208 +56,211 @@
           </div>
           
       </div>
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default" ng-controller="TabController as tabCtr">
-        
-          <div class="navbar-header">
-            <button type="button" 
-              class="navbar-toggle collapsed" 
-              data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
 
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="{{ contentCtr.menuTop[0].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 3 )">
-                  {{  contentCtr.menuTop[0].text }}
-                </a>
-              </li>
-              <li>
-                <a href="{{ contentCtr.menuTop[1].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 2 )">
-                  {{  contentCtr.menuTop[1].text }}
-                </a>
-              </li>
-              <li>
-                <a href="{{ contentCtr.menuTop[2].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 4 )">
-                  {{  contentCtr.menuTop[2].text }}
-                </a>
-              </li>
-               <li>
-                <a href="{{ contentCtr.menuTop[3].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 1 )">
-                  {{  contentCtr.menuTop[3].text }}
-                </a>
-              </li>
-              <li>
-                <a href="{{ contentCtr.menuTop[4].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 0 )">
-                  {{  contentCtr.menuTop[4].text }}
-                </a>
-              </li>
-            </ul>
-            
-          </div><!--/.nav-collapse -->
-      </nav>
-      <div class="row" ng-controller="TabController as tabCtr">
-        <div class="col-sm-4">
-          <div class="navbar-default sidebar" role="navigation">
-            <div class="sidebar-nav">
-              <ul class="nav" id="side-menu">
-                <li class="active">
-                  <a href="#"><i class="fa fa-book fa-2"></i> {{ contentCtr.menuLeft.title }} <span class="fa arrow"></span></a>
-                  
-                  <!-- Menu Left -->
-                  <ul class="nav nav-second-level">
-                    <li>
-                      <!-- Latest News -->
-                      <a href="{{ contentCtr.menuLeft.items[2].url }}">{{ contentCtr.menuLeft.items[2].text }}</a>
+      <div ng-controller="TabController as tabCtr">
+      
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          
+            <div class="navbar-header">
+              <button type="button" 
+                class="navbar-toggle collapsed" 
+                data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
 
-                      <!-- Press Releases -->
-                      <a href="{{ contentCtr.menuLeft.items[1].url }}">{{ contentCtr.menuLeft.items[1].text }}</a>
-                      
-                      <!-- Assistance to Family -->
-                      <a href="{{ contentCtr.menuLeft.items[3].url }}">{{ contentCtr.menuLeft.items[3].text }}</a>
-                      
-                      <!-- Corporate -->
-                      <a href="{{ contentCtr.menuLeft.items[0].url }}">{{ contentCtr.menuLeft.items[0].text }}</a>
-                    </li>
-                  </ul><!-- /.nav-second-level -->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="{{ contentCtr.menuTop[0].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 3 )">
+                    {{  contentCtr.menuTop[0].text }}
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ contentCtr.menuTop[1].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 2 )">
+                    {{  contentCtr.menuTop[1].text }}
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ contentCtr.menuTop[2].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 4 )">
+                    {{  contentCtr.menuTop[2].text }}
+                  </a>
+                </li>
+                 <li>
+                  <a href="{{ contentCtr.menuTop[3].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 1 )">
+                    {{  contentCtr.menuTop[3].text }}
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ contentCtr.menuTop[4].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 0 )">
+                    {{  contentCtr.menuTop[4].text }}
+                  </a>
                 </li>
               </ul>
-            </div><!-- /.sidebar-collapse -->
-          </div>
-        </div><!-- col-sm-4 -->
+              
+            </div><!--/.nav-collapse -->
+        </nav>
+          <div class="row">
 
-        <div id="content" class="col-sm-8 blog-main">
-        {{  }}
-          <!-- Corporate Tabs -->
-          <div ng-show="tabCtr.isSet(1)">
-            <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
-              <ul class="nav nav-tabs">
+          <!-- El menú lateral será parte de corporate únicamente.
+          <div class="col-sm-4">
+            <div class="navbar-default sidebar" role="navigation">
+              <div class="sidebar-nav">
+                <ul class="nav" id="side-menu">
+                  <li class="active">
+                    <a href="#"><i class="fa fa-book fa-2"></i> {{ contentCtr.menuLeft.title }} <span class="fa arrow"></span></a>
+                    
+                    <ul class="nav nav-second-level">
+                      <li>
+                        <a href="{{ contentCtr.menuLeft.items[2].url }}">{{ contentCtr.menuLeft.items[2].text }}</a>
+
+                        <a href="{{ contentCtr.menuLeft.items[1].url }}">{{ contentCtr.menuLeft.items[1].text }}</a>
+                        
+                        <a href="{{ contentCtr.menuLeft.items[3].url }}">{{ contentCtr.menuLeft.items[3].text }}</a>
+                        
+                        <a href="{{ contentCtr.menuLeft.items[0].url }}">{{ contentCtr.menuLeft.items[0].text }}</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+          <div id="content" class="col-sm-12 blog-main">
+      
+            <!-- Corporate Tabs -->
+            <div ng-show="tabCtr.isSet(1)">
+              <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
+                <ul class="nav nav-tabs">
+                  <!-- History -->
+                  <li ng-class="{ active: tab2Ctr.isSet(1) }">
+                    <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
+                  </li>
+                  
+                  <!-- Security -->
+                  <li ng-class="{ active: tab2Ctr.isSet(2) }">
+                    <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
+                  </li>
+                  
+                  <!-- Fleet -->
+                  <li ng-class="{ active: tab2Ctr.isSet(3) }">
+                    <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
+                  </li>
+                  
+                  <!-- Hub -->
+                  <li ng-class="{ active: tab2Ctr.isSet(4) }">
+                    <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
+                  </li>
+                </ul>
+               
                 <!-- History -->
-                <li ng-class="{ active: tab2Ctr.isSet(1) }">
-                  <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
-                </li>
+                <div ng-show="tab2Ctr.isSet(1)">
+                  <h4>{{ contentCtr.history.title }}</h4>
+                  <p>{{ contentCtr.history.text }}</p>
+                  <article ng-repeat="year in contentCtr.history.years">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <img ng-src="{{ year.img }}" class="history-img">
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <h2>{{ year.title }}</h2>
+                      <p>{{ year.text }}</p>
+                    </div>
+                  </article>
+                </div>
                 
                 <!-- Security -->
-                <li ng-class="{ active: tab2Ctr.isSet(2) }">
-                  <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
-                </li>
-                
+                <div ng-show="tab2Ctr.isSet(2)">
+                  <h4>{{ contentCtr.security.title }}</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
                 <!-- Fleet -->
-                <li ng-class="{ active: tab2Ctr.isSet(3) }">
-                  <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
-                </li>
-                
-                <!-- Hub -->
-                <li ng-class="{ active: tab2Ctr.isSet(4) }">
-                  <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
-                </li>
-              </ul>
-             
-              <!-- History -->
-              <div ng-show="tab2Ctr.isSet(1)">
-                <h4>{{ contentCtr.history.title }}</h4>
-                <p>{{ contentCtr.history.text }}</p>
-                <article ng-repeat="year in contentCtr.history.years">
-                  <div class="col-xs-12 col-md-6 col-lg-6">
-                    <img ng-src="{{ year.img }}" class="history-img">
-                  </div>
-                  <div class="col-xs-12 col-md-6 col-lg-6">
-                    <h2>{{ year.title }}</h2>
-                    <p>{{ year.text }}</p>
-                  </div>
-                </article>
-              </div>
-              
-              <!-- Security -->
-              <div ng-show="tab2Ctr.isSet(2)">
-                <h4>{{ contentCtr.security.title }}</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
+                <div ng-show="tab2Ctr.isSet(3)">
+                 <article>
+                   <div class="col-xs-12 col-md-12 col-lg-12">
+                     <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
+                   </div>
+                   <div class="col-xs-12 col-md-6 col-lg-6">
+                     <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
+                   </div>
+                   <div class="cols-xs-12 col-md-6 col-lg-6">
+                     
+                     <p>{{ contentCtr.singleFleet.cacCount }}</p>
+                     <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
+                     <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
+                      <a href="{{ contentCtr.singleFleet.details.url }}">
+                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
+                        {{ contentCtr.singleFleet.details.label }}
+                      </a><br>
+                      <a href="{{ contentCtr.singleFleet.music.url }}">
+                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
+                        {{ contentCtr.singleFleet.music.label }}
+                      </a>
+                   </div>
+                 </article>
 
-              <!-- Fleet -->
-              <div ng-show="tab2Ctr.isSet(3)">
-               <article>
-                 <div class="col-xs-12 col-md-12 col-lg-12">
-                   <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
-                 </div>
-                 <div class="col-xs-12 col-md-6 col-lg-6">
-                   <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
-                 </div>
-                 <div class="cols-xs-12 col-md-6 col-lg-6">
+                 <article ng-repeat="fleet in contentCtr.fleet.fleets">
+                   <div class="col-xs-12 col-md-12 col-lg-12">
+                      <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
+                      <img ng-src="{{ fleet.img }}" class="fleet2model">
+                   </div>
+                   <div class="col-xs-12 col-md-6 col-lg-6" ng-repeat="model in fleet.model">
+                      <h3>{{ model.title }}</h3>
+                      <p>{{ model.cacCount }}</p>
+                      <p ng-show="model.business">
+                        <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
+                        {{ model.business }}
+                      </p>
+                      <p>
+                        <img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> 
+                        {{ model.general }}
+                      </p>
+                      <a href="{{ model.details.url }}">
+                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon">
+                        {{ model.details.label }}
+                      </a><br>
+                      <a href="{{ model.music.url }}">
+                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
+                        {{ model.music.label }}
+                      </a>
+                   </div>
                    
-                   <p>{{ contentCtr.singleFleet.cacCount }}</p>
-                   <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
-                   <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
-                    <a href="{{ contentCtr.singleFleet.details.url }}">
-                      <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
-                      {{ contentCtr.singleFleet.details.label }}
-                    </a><br>
-                    <a href="{{ contentCtr.singleFleet.music.url }}">
-                      <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
-                      {{ contentCtr.singleFleet.music.label }}
-                    </a>
-                 </div>
-               </article>
+                 </article>
+                </div>
 
-               <article ng-repeat="fleet in contentCtr.fleet.fleets">
-                 <div class="col-xs-12 col-md-12 col-lg-12">
-                    <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
-                    <img ng-src="{{ fleet.img }}" class="fleet2model">
-                 </div>
-                 <div class="col-xs-12 col-md-6 col-lg-6" ng-repeat="model in fleet.model">
-                    <h3>{{ model.title }}</h3>
-                    <p>{{ model.cacCount }}</p>
-                    <p ng-show="model.business">
-                      <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
-                      {{ model.business }}
-                    </p>
-                    <p>
-                      <img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> 
-                      {{ model.general }}
-                    </p>
-                    <a href="{{ model.details.url }}">
-                      <img src="img/icon-detalles-tecnicos.png" class="fleet-icon">
-                      {{ model.details.label }}
-                    </a><br>
-                    <a href="{{ model.music.url }}">
-                      <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
-                      {{ model.music.label }}
-                    </a>
-                 </div>
-                 
-               </article>
-              </div>
+                <!-- Hub -->
+                <div ng-show="tab2Ctr.isSet(4)">
+                  <article ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
+                </div>
+              </section>
 
-              <!-- Hub -->
-              <div ng-show="tab2Ctr.isSet(4)">
-                <article ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
-              </div>
-            </section>
+            </div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
+          </div><!-- /.blog-main -->
 
-          </div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
-        </div><!-- /.blog-main -->
-
-      </div><!-- /.row -->
+        </div><!-- /.row -->
+      </div>
+     
+      
       <footer ng-show="contentCtr.width < 600">
         <div class="row footer-background">
           <div class="col-xs-6 footer-body" ng-repeat="list in contentCtr.menuBottom.lists track by list.id">
