@@ -20,30 +20,26 @@
 		},
 		menu_top: {
 			en: [
-				{text: 'Book Your Trip',
-				url: 'https://bookings.copaair.com/CMGS/AirSearchExternalForward.do?tripType=RT&pos=CMGS&lang=en'},
-				{text: 'Web Check-In', url: 'http://checkin.copaair.com/web/' },
-				{text: 'Manage your booking', url: 'http://www.copaair.com/sites/CC/en/manage-your-reservation/Pages/landing-page.aspx' },
-				{text: 'Flight Information', url: 'http://www.copaair.com/sites/CC/en/manage-your-reservation/Pages/landing-page.aspx'},
-				{text: 'Mileage Plus', url: 'http://www.copaair.com/sites/CC/en/MileagePlus/Pages/MileagePlus.aspx'},
-				{text: 'Promotions', url: 'http://www.copaair.com/sites/gs/en/deals-and-offers/pages/web-deals.aspx'}
+				{ text: 'Latest News', url: 'content/en/latest-news-en.html' },
+				{ text: 'Press Releases', url: 'content/en/press-releases.html' },
+				{ text: 'About Copa Airlines', url: 'content/en/corporate-tabs.html' },
+				{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
+				{ text: 'Copa.com', url: 'http://www.copa.com/'}
 			],
 			es: [
-				{text: 'Reserve Su Viaje', url: 'https://bookings.copaair.com/CMGS/AirSearchExternalForward.do?tripType=RT&pos=CMGS&lang=es'},
-				{text: 'Web Check-In', url: 'http://checkin.copaair.com/web/' },
-				{text: 'Maneje su Reserva', url: 'http://www.copaair.com/sites/CC/es/manage-your-reservation/Pages/landing-page.aspx' },
-				{text: 'Información de Vuelos', url: 'http://www.copaair.com/sites/CC/es/manage-your-reservation/Pages/landing-page.aspx'},
-				{text: 'ConnectMiles', url: 'https://connectmiles.copaair.com/es?utm_source=copaair.com&utm_medium=referral&utm_campaign=copaairESmenu'},
-				{text: 'Promociones', url: 'http://www.copaair.com/sites/gs/es/deals-and-offers/pages/web-deals.aspx'}
+				{ text: 'Últimas Noticias', url: 'content/es/latest-news-en.html' },
+				{ text: 'Comunicados de prensa', url: 'content/es/press-releases.html' },
+				{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' },
+				{ text: 'Acerca de Copa Airlines', url: 'content/es/corporate-tabs.html' },
+				{ text: 'Copa.com', url: 'http://www.copa.com/'}
 			],
 
 			pt: [
-				{text: 'Reserve a sua viagem', url: 'https://bookings.copaair.com/CMGS/AirSearchExternalForward.do?tripType=RT&pos=CMGS&lang=pt'},
-				{text: 'Web Check-In', url: 'http://checkin.copaair.com/web/' },
-				{text: 'Administre a sua reserva', url: 'http://www.copaair.com/sites/CC/pt/manage-your-reservation/Pages/landing-page.aspx' },
-				{text: 'Informações de voos', url: 'http://www.copaair.com/sites/CC/pt/manage-your-reservation/Pages/landing-page.aspx'},
-				{text: 'MileagePlus®', url: 'https://connectmiles.copaair.com/pt?utm_source=copaair.com&utm_medium=referral&utm_campaign=copaairESmenu'},
-				{text: 'Promoções', url: 'http://www.copaair.com/sites/gs/pt/deals-and-offers/pages/web-deals.aspx'}
+				{ text: 'Últimas Notícias', url: 'content/pt/latest-news-en.html' },
+				{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases.html' },
+				{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' },
+				{ text: 'Acerca de Copa Airlines', url: 'content/pt/corporate-tabs.html' },
+				{ text: 'Copa.com', url: 'http://www.copa.com/'}
 			]
 		},
 		menu_left: {			
