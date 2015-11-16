@@ -165,11 +165,11 @@
                   <p>{{ contentCtr.history.text }}</p>
                   <article ng-repeat="year in contentCtr.history.years">
                     <div class="col-xs-12 col-md-6 col-lg-6">
-                      <img ng-src="{{ year.img }}" class="history-img">
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-6">
                       <h2>{{ year.title }}</h2>
                       <p>{{ year.text }}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <img ng-src="{{ year.img }}" class="history-img pull-left">
                     </div>
                   </article>
                 </div>
