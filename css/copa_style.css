@@ -52,29 +52,31 @@ img { width:100%; }
 }
 
 
-.nav-en { padding: 25px 37.74px 25px 37.74px !important }
-.nav-es { padding: 25px 26.32px 25px 26.33px !important }
-.nav-pt { padding: 25px 23.171px 25px 23.171px !important }
+.nav-en { padding: 25px 33.3px 25px 33.3px !important }
+.nav-es { padding: 25px 23.56px 25px 23.59px !important }
+.nav-pt { padding: 25px 18.74px 25px 18.74px !important }
 
 @media(max-width: 990px){
   div.container { width:850px !important; }
-  .nav-en { padding-left: 11.5px !important; padding-right: 11.5px !important; }
-  .nav-es { font-size: 1.2em !important; padding-left: 11.99px !important; padding-right: 11.99px !important; }
-  .nav-pt { font-size: 1.2em !important; padding-left: 8.15px !important; padding-right: 8.15px !important; }
+  .nav-en { padding-left: 21.3px !important; padding-right: 21.3px !important; }
+  .nav-es { font-size: 1.2em !important; padding-left: 16.2px !important; padding-right: 16.2px !important; }
+  .nav-pt { font-size: 1.2em !important; padding-left: 11.7px !important; padding-right: 11.7px !important; }
 }
 
 
 @media(max-width: 850px){
   div.container { width:750px !important; }
   .sidebar { width: 221px !important; }
-  .nav-en { font-size: 1.2em !important; padding-left: 6.97px !important; padding-right: 6.97px !important; }
-  .nav-es { font-size: 1.1em !important; padding-left: 8.308px !important; padding-right: 8.308px !important; }
-  .nav-pt { font-size: 1.1em !important; padding-left: 4.78px !important; padding-right: 4.78px !important; }
+  .nav-en { font-size: 1.2em !important; padding-left: 15.3px !important; padding-right: 15.3px !important; }
+  .nav-es { font-size: 1.1em !important; padding-left: 11.7px !important; padding-right: 11.7px !important; }
+  .nav-pt { font-size: 1.1em !important; padding-left: 7.57px !important; padding-right: 7.57px !important; }
 }
 
 @media(max-width: 765px){
   div.container { width: 95% !important; }
 }
+
+li.active > a { background: #CCC !important; color:#FFF !important; }
 
 .navbar-default .navbar-nav>li>a {
   background: -webkit-linear-gradient(#AAAAAA, #CCCCCC); /* For Safari 5.1 to 6.0 */
@@ -86,10 +88,7 @@ img { width:100%; }
 
 
 .navbar-default .navbar-nav>li>a:hover {
-  background: -webkit-linear-gradient(#1472bc, #144aae); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#1472bc, #144aae); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#1472bc, #144aae); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#1472bc, #144aae); /* Standard syntax */
+  background: #CCC; 
 }
 
 .navbar-default .navbar-nav>li:nth-last-child(1)>a {
@@ -100,21 +99,21 @@ img { width:100%; }
 }
 
 .navbar-default .navbar-nav>li:nth-last-child(1)>a:hover {
-  background: -webkit-linear-gradient(#64c3ff, #6699ff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#64c3ff, #6699ff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#64c3ff, #6699ff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#64c3ff, #6699ff); /* Standard syntax */
+  background: #888; /* Standard syntax */
 }
 
-
-
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
-  color: #FFF;
+.navbar-default .navbar-nav>li>a { 
+  color:black;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  line-height: 1em;
+  line-height: 1em; 
 }
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FFF;
+}
+
 .navbar-collapse { padding: 0 !important }
 
 #navbar { border:none; background-color: white; }
@@ -302,7 +301,7 @@ img.fleet-img { margin-bottom: 25px; }
 .nav-tabs { margin-bottom: 20px; }
 
 .nav-tabs>li>a {
-  background-color: #A4A4A4;
+  background-color: #214981;
   color:#fff;
 }
 .nav-tabs>li>a:hover {

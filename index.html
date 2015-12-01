@@ -36,7 +36,7 @@
 
         <div class="col-xs-6 col-md-9 col-lg-9">
           <a href="http://www.copaair.com">
-            <img src="img/COPA_STAR_LOGO.svg" class="logo_copa">
+            <img src="img/COPA_STAR_LOGO_BLACK.png" class="logo_copa">
           </a>  
         </div>
         <div class="pull-right col-xs-6 col-md-3 col-lg-3">
@@ -76,27 +76,27 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li>
+                <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
                   <a href="{{ contentCtr.menuTop[0].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 3 )">
                     {{  contentCtr.menuTop[0].text }}
                   </a>
                 </li>
-                <li>
+                <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
                   <a href="{{ contentCtr.menuTop[1].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 2 )">
                     {{  contentCtr.menuTop[1].text }}
                   </a>
                 </li>
-                <li>
+                <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
                   <a href="{{ contentCtr.menuTop[2].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 4 )">
                     {{  contentCtr.menuTop[2].text }}
                   </a>
                 </li>
-                 <li>
+                 <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
                   <a href="{{ contentCtr.menuTop[3].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 1 )">
                     {{  contentCtr.menuTop[3].text }}
                   </a>
                 </li>
-                <li>
+                <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
                   <a href="{{ contentCtr.menuTop[4].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 0 )">
                     {{  contentCtr.menuTop[4].text }}
                   </a>
@@ -106,31 +106,6 @@
             </div><!--/.nav-collapse -->
         </nav>
           <div class="row">
-
-          <!-- El menú lateral será parte de corporate únicamente.
-          <div class="col-sm-4">
-            <div class="navbar-default sidebar" role="navigation">
-              <div class="sidebar-nav">
-                <ul class="nav" id="side-menu">
-                  <li class="active">
-                    <a href="#"><i class="fa fa-book fa-2"></i> {{ contentCtr.menuLeft.title }} <span class="fa arrow"></span></a>
-                    
-                    <ul class="nav nav-second-level">
-                      <li>
-                        <a href="{{ contentCtr.menuLeft.items[2].url }}">{{ contentCtr.menuLeft.items[2].text }}</a>
-
-                        <a href="{{ contentCtr.menuLeft.items[1].url }}">{{ contentCtr.menuLeft.items[1].text }}</a>
-                        
-                        <a href="{{ contentCtr.menuLeft.items[3].url }}">{{ contentCtr.menuLeft.items[3].text }}</a>
-                        
-                        <a href="{{ contentCtr.menuLeft.items[0].url }}">{{ contentCtr.menuLeft.items[0].text }}</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
 
           <div id="content" class="col-sm-12 blog-main">
       
@@ -291,7 +266,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/metisMenu.min.js"></script>
     <script src="js/side_menu.js"></script>
-    <!--<script src="js/main.js"></script>-->
     <script src="js/angular_logic_list.js"></script>
   </body>
 </html>
