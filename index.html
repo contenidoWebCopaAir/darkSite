@@ -12,6 +12,7 @@
     <title>Copa Airlines</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/copa_style.css" rel="stylesheet">
@@ -77,27 +78,27 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[0].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 3 )">
+                  <a href="{{ contentCtr.menuTop[0].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 3 )">
                     {{  contentCtr.menuTop[0].text }}
                   </a>
                 </li>
                 <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[1].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 2 )">
+                  <a href="{{ contentCtr.menuTop[1].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 2 )">
                     {{  contentCtr.menuTop[1].text }}
                   </a>
                 </li>
                 <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[2].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 4 )">
+                  <a href="{{ contentCtr.menuTop[2].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 4 )">
                     {{  contentCtr.menuTop[2].text }}
                   </a>
                 </li>
                  <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[3].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 1 )">
+                  <a href="{{ contentCtr.menuTop[3].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 1 )">
                     {{  contentCtr.menuTop[3].text }}
                   </a>
                 </li>
                 <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[4].url }}" ng-class="contentCtr.navClass" ng-click="tabCtr.setTab( 0 )">
+                  <a href="{{ contentCtr.menuTop[4].url }}" class="ng-class: contentCtr.navClass;" target="_blank">
                     {{  contentCtr.menuTop[4].text }}
                   </a>
                 </li>
