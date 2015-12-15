@@ -637,6 +637,7 @@
 			}
 		} 
 	};
+
 	var app = angular.module('darkSite', []);
 
 	app.controller('ContentController', function(){
@@ -648,7 +649,6 @@
 			this.menuTop 		= data.menu_top.es;
 			this.menuLeft 		= data.menu_left.es;
 			this.menuBottom		= data.min_footer.es;
-			this.width 			= data.width;		//Ancho de la ventana
 			this.history 		= data.history.es;
 			this.security 		= data.security.es;
 			this.fleet 			= data.fleet.es;
@@ -741,3 +741,41 @@
 
 
 })();
+
+$(document).ready(function(){
+
+	$('#toggle-menu').on('click', function(){
+		$(this).next().slideToggle();
+	});
+
+	var win = $(window),
+		windowWidth = win.width(),
+		fNormal = $("div.footer-normal"),
+		fMin = $("div.footer-min");
+
+	if (win.width() < 768){
+		fNormal.hide();
+	}
+	
+	if (win.width() > 768){
+		fMin.hide();
+	}
+
+	win.resize(function(){
+		
+	if (win.width() < 768){
+		fMin.show();
+		fNormal.hide();
+	}
+	
+	if (win.width() > 768){
+		fNormal.show();
+		fMin.hide();
+	}
+
+		
+	}); 
+
+
+
+});

@@ -40,7 +40,7 @@
             <img src="img/COPA_STAR_LOGO_BLACK.png" class="logo_copa">
           </a>  
         </div>
-        <div class="pull-right col-xs-6 col-md-3 col-lg-3">
+        <div class="col-xs-6 col-md-3 col-lg-3">
          
             <div class="form-group">
               <div class="input-group">
@@ -57,54 +57,39 @@
           </div>
           
       </div>
-
+      
       <div ng-controller="TabController as tabCtr">
       
         <!-- Static navbar -->
-        <nav class="navbar navbar-default">
-          
-            <div class="navbar-header">
-              <button type="button" 
-                class="navbar-toggle collapsed" 
-                data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[0].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 3 )">
-                    {{  contentCtr.menuTop[0].text }}
-                  </a>
-                </li>
-                <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[1].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 2 )">
-                    {{  contentCtr.menuTop[1].text }}
-                  </a>
-                </li>
-                <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[2].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 4 )">
-                    {{  contentCtr.menuTop[2].text }}
-                  </a>
-                </li>
-                 <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[3].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 1 )">
-                    {{  contentCtr.menuTop[3].text }}
-                  </a>
-                </li>
-                <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
-                  <a href="{{ contentCtr.menuTop[4].url }}" class="ng-class: contentCtr.navClass;" target="_blank">
-                    {{  contentCtr.menuTop[4].text }}
-                  </a>
-                </li>
-              </ul>
-              
-            </div><!--/.nav-collapse -->
+        <nav>
+          <div id="toggle-menu">Menu</div>
+          <ul class="top-menu">
+            <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
+              <a href="{{ contentCtr.menuTop[0].url }}" ng-click="tabCtr.setTab( 3 )">
+                {{  contentCtr.menuTop[0].text }}
+              </a>
+            </li>
+            <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
+              <a href="{{ contentCtr.menuTop[1].url }}" ng-click="tabCtr.setTab( 2 )">
+                {{  contentCtr.menuTop[1].text }}
+              </a>
+            </li>
+            <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
+              <a href="{{ contentCtr.menuTop[2].url }}" ng-click="tabCtr.setTab( 4 )">
+                {{  contentCtr.menuTop[2].text }}
+              </a>
+            </li>
+             <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
+              <a href="{{ contentCtr.menuTop[3].url }}" ng-click="tabCtr.setTab( 1 )">
+                {{  contentCtr.menuTop[3].text }}
+              </a>
+            </li>
+            <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
+              <a href="{{ contentCtr.menuTop[4].url }}" target="_blank">
+                {{  contentCtr.menuTop[4].text }}
+              </a>
+            </li>
+          </ul>
         </nav>
           <div class="row">
 
@@ -237,36 +222,24 @@
       </div>
      
       
-      <footer ng-show="contentCtr.width < 600">
-        <div class="row footer-background">
-          <div class="col-xs-6 footer-body" ng-repeat="list in contentCtr.menuBottom.lists track by list.id">
-            <div class="footer-title">
-              <h3>{{ list.title }}</h3>
-            </div>
-            <ul>
-              <li ng-repeat="item in list.items">
-                <a href="{{ item.url }}">{{ item.label }}</a>
-              </li>
-            </ul>
+        <footer>
+          <div class="footer-min">
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/footer-min.html'"></div>
           </div>
-        </div>
-        <div class="row" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"> 
-        </div>
-      </footer>
-      <footer 
-        ng-show="contentCtr.width > 600" 
-        ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></footer>
 
-
-      </div> 
+          <div class="footer-normal">
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></div>
+          </div>
+         
+          <div class="grid" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"></div>
+        </footer>
+      
+      </div>
     </div> <!-- /container -->
 
 
     <script src="js/angular.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/metisMenu.min.js"></script>
-    <script src="js/side_menu.js"></script>
     <script src="js/angular_logic_list.js"></script>
   </body>
 </html>
