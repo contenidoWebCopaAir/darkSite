@@ -33,8 +33,8 @@
   <body ng-app="darkSite">
 
     <div class="container" ng-controller="ContentController as contentCtr">
+      
       <div class="row">
-
         <div class="col-xs-6 col-md-9 col-lg-9">
           <a href="http://www.copaair.com">
             <img src="img/COPA_STAR_LOGO_BLACK.png" class="logo_copa">
@@ -122,15 +122,19 @@
                
                 <!-- History -->
                 <div ng-show="tab2Ctr.isSet(1)">
+
                   <h4>{{ contentCtr.history.title }}</h4>
                   <p>{{ contentCtr.history.text }}</p>
+
                   <article ng-repeat="year in contentCtr.history.years">
-                    <div class="col-xs-12 col-md-6 col-lg-6">
-                      <h2>{{ year.title }}</h2>
-                      <p>{{ year.text }}</p>
-                    </div>
-                    <div class="col-xs-12 col-md-6 col-lg-6">
-                      <img ng-src="{{ year.img }}" class="history-img pull-left">
+                    <div class="Media">
+                      <div class="Media__figure">
+                        <img ng-src="{{ year.img }}" class="history-img pull-left">
+                      </div>
+                      <div class="Media__body">
+                        <h2>{{ year.title }}</h2>
+                        <p>{{ year.text }}</p>
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -154,36 +158,37 @@
 
                 <!-- Fleet -->
                 <div ng-show="tab2Ctr.isSet(3)">
-                 <article>
-                   <div class="col-xs-12 col-md-12 col-lg-12">
-                     <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
-                   </div>
-                   <div class="col-xs-12 col-md-6 col-lg-6">
-                     <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
-                   </div>
-                   <div class="cols-xs-12 col-md-6 col-lg-6">
-                     
-                     <p>{{ contentCtr.singleFleet.cacCount }}</p>
-                     <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
-                     <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
-                      <a href="{{ contentCtr.singleFleet.details.url }}">
-                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
-                        {{ contentCtr.singleFleet.details.label }}
-                      </a><br>
-                      <a href="{{ contentCtr.singleFleet.music.url }}">
-                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
-                        {{ contentCtr.singleFleet.music.label }}
-                      </a>
-                   </div>
+                  <article>
+                    <div class="Media">
+                      <div class="Media__figure">
+                        <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
+                        <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
+                      </div>
+                      <div class="Media__body">
+                        <p>{{ contentCtr.singleFleet.cacCount }}</p>
+                        <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
+                        <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
+                        <a href="{{ contentCtr.singleFleet.details.url }}">
+                          <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
+                          {{ contentCtr.singleFleet.details.label }}
+                        </a><br>
+                        <a href="{{ contentCtr.singleFleet.music.url }}">
+                          <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
+                          {{ contentCtr.singleFleet.music.label }}
+                        </a>
+                      </div>
+                    </div>
                  </article>
 
-                 <article ng-repeat="fleet in contentCtr.fleet.fleets">
-                   <div class="col-xs-12 col-md-12 col-lg-12">
+                <article ng-repeat="fleet in contentCtr.fleet.fleets">
+                  <div class="Media">
+                    <div class="Media__figure">
                       <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
                       <img ng-src="{{ fleet.img }}" class="fleet2model">
-                   </div>
-                   <div class="col-xs-12 col-md-6 col-lg-6" ng-repeat="model in fleet.model">
-                      <h3>{{ model.title }}</h3>
+                    </div>
+                    <div class="Media__body">
+                      <div ng-repeat="model in fleet.model">
+                        <h3>{{ model.title }}</h3>
                       <p>{{ model.cacCount }}</p>
                       <p ng-show="model.business">
                         <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
@@ -201,8 +206,9 @@
                         <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
                         {{ model.music.label }}
                       </a>
-                   </div>
-                   
+                      </div>
+                    </div>
+                  </div>  
                  </article>
                 </div>
 
@@ -220,7 +226,6 @@
 
         </div><!-- /.row -->
       </div>
-     
       
         <footer>
           <div class="footer-min">
@@ -234,9 +239,7 @@
           <div class="grid" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"></div>
         </footer>
       
-      </div>
     </div> <!-- /container -->
-
 
     <script src="js/angular.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
