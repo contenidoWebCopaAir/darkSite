@@ -54,6 +54,8 @@ ul > li { list-style: none; }
 
 .top-menu {  background: grey; }
 
+.navbar-toggle { border:none; }
+
 ul { 
   padding-left:0;
   margin-top: 0;
@@ -89,13 +91,14 @@ ul {
 .top-menu li:last-child { border-bottom: none; }
 
 .top-menu li a {
-  color:#eee;
+  color: #FFF;
+  font-size: 18px;
   text-decoration: none;
-  line-height: 1;
+  text-align: center;
+  line-height: 1em;
   display: block;
   padding-left: 10px;
   font-weight: bold;
-  font-size: 1em;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -105,10 +108,11 @@ ul {
 }
 
 #toggle-menu {
-  background: rgb(14,3,114);
+  background: rgb(238,238,238);
+  border-radius: 15px 15px 0 0;
   line-height: 2;
-  color:#fff;
-  padding-left: 1em;
+  color:grey;
+  padding: 1em;
   font-size: .9em;
   cursor:pointer;
 }
@@ -124,8 +128,9 @@ li.active > a {
 .nav-tabs { margin-bottom: 20px; }
 
 .nav-tabs>li>a {
-  background-color: #214981;
-  color:#fff;
+  background-color: #fff;
+  color:black;
+  border: 1px solid #214981;
 }
 .nav-tabs>li>a:hover {
   color: #004982;
@@ -157,6 +162,14 @@ li.active > a {
 
 footer { margin-top: 30px; }
 
+.grid__column > h3 {
+  font-weight: normal;
+  color: #000;
+  font-size: 1em;
+}
+
+.footer-content > .grid__column, .footer-title > .grid__column { border-right: 1px solid rgba(0,0,0,0.2) }
+
 .footer-nav li { font-size: .8em; }
 
 .footer-nav li a { margin-left: 5px; padding-top:5px; padding-bottom: 5px; display: flex; } 
@@ -169,9 +182,10 @@ footer { margin-top: 30px; }
   background: rgb(239,239,239);
 }
 
-.footer-title > .grid__column { text-align: center; }
+.footer-title > .grid__column { text-align: left; margin-left: 10px; }
 
-.social, .termns { text-align: center; padding-top: 10px; }
+.social, .termns { text-align: center; padding-top: 30px; }
+
 
 
 

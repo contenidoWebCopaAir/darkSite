@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Copa Airlines</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/copa_style.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69970262-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body ng-app="darkSite">
+
+    <div class="container" ng-controller="ContentController as contentCtr">
+      <div class="row">
+
+        <div class="col-xs-6 col-md-9 col-lg-9">
+          <a href="http://www.copaair.com">
+            <img src="img/COPA_STAR_LOGO_BLACK.png" class="logo_copa">
+          </a>  
+        </div>
+        <div class="pull-right col-xs-6 col-md-3 col-lg-3">
+         
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-globe fa-3"></i></div>
+                <select 
+                  class="form-control" 
+                  ng-model="contentCtr.currentLang" 
+                  ng-change="contentCtr.setLang()"
+                  ng-options="option.label for option in contentCtr.select track by option.value">
+                </select>
+              </div>
+            </div>
+         
+          </div>
+          
+      </div>
+
+      <div ng-controller="TabController as tabCtr">
+      
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          
+            <div class="navbar-header">
+              <button type="button" 
+                class="navbar-toggle collapsed" 
+                data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
+                  <a href="{{ contentCtr.menuTop[0].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 3 )">
+                    {{  contentCtr.menuTop[0].text }}
+                  </a>
+                </li>
+                <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
+                  <a href="{{ contentCtr.menuTop[1].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 2 )">
+                    {{  contentCtr.menuTop[1].text }}
+                  </a>
+                </li>
+                <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
+                  <a href="{{ contentCtr.menuTop[2].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 4 )">
+                    {{  contentCtr.menuTop[2].text }}
+                  </a>
+                </li>
+                 <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
+                  <a href="{{ contentCtr.menuTop[3].url }}" class="ng-class: contentCtr.navClass;" ng-click="tabCtr.setTab( 1 )">
+                    {{  contentCtr.menuTop[3].text }}
+                  </a>
+                </li>
+                <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
+                  <a href="{{ contentCtr.menuTop[4].url }}" class="ng-class: contentCtr.navClass;" target="_blank">
+                    {{  contentCtr.menuTop[4].text }}
+                  </a>
+                </li>
+              </ul>
+              
+            </div><!--/.nav-collapse -->
+        </nav>
+          <div class="row">
+
+          <div id="content" class="col-sm-12 blog-main">
+      
+            <!-- Corporate Tabs -->
+            <div ng-show="tabCtr.isSet(1)">
+              <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
+                <ul class="nav nav-tabs">
+                  <!-- History -->
+                  <li ng-class="{ active: tab2Ctr.isSet(1) }">
+                    <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
+                  </li>
+                  
+                  <!-- Security -->
+                  <li ng-class="{ active: tab2Ctr.isSet(2) }">
+                    <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
+                  </li>
+                  
+                  <!-- Fleet -->
+                  <li ng-class="{ active: tab2Ctr.isSet(3) }">
+                    <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
+                  </li>
+                  
+                  <!-- Hub -->
+                  <li ng-class="{ active: tab2Ctr.isSet(4) }">
+                    <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
+                  </li>
+                </ul>
+               
+                <!-- History -->
+                <div ng-show="tab2Ctr.isSet(1)">
+                  <h4>{{ contentCtr.history.title }}</h4>
+                  <p>{{ contentCtr.history.text }}</p>
+                  <article ng-repeat="year in contentCtr.history.years">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <h2>{{ year.title }}</h2>
+                      <p>{{ year.text }}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                      <img ng-src="{{ year.img }}" class="history-img pull-left">
+                    </div>
+                  </article>
+                </div>
+                
+                <!-- Security -->
+                <div ng-show="tab2Ctr.isSet(2)">
+                  <h4>{{ contentCtr.security.title }}</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <!-- Fleet -->
+                <div ng-show="tab2Ctr.isSet(3)">
+                 <article>
+                   <div class="col-xs-12 col-md-12 col-lg-12">
+                     <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
+                   </div>
+                   <div class="col-xs-12 col-md-6 col-lg-6">
+                     <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
+                   </div>
+                   <div class="cols-xs-12 col-md-6 col-lg-6">
+                     
+                     <p>{{ contentCtr.singleFleet.cacCount }}</p>
+                     <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
+                     <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
+                      <a href="{{ contentCtr.singleFleet.details.url }}">
+                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
+                        {{ contentCtr.singleFleet.details.label }}
+                      </a><br>
+                      <a href="{{ contentCtr.singleFleet.music.url }}">
+                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
+                        {{ contentCtr.singleFleet.music.label }}
+                      </a>
+                   </div>
+                 </article>
+
+                 <article ng-repeat="fleet in contentCtr.fleet.fleets">
+                   <div class="col-xs-12 col-md-12 col-lg-12">
+                      <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
+                      <img ng-src="{{ fleet.img }}" class="fleet2model">
+                   </div>
+                   <div class="col-xs-12 col-md-6 col-lg-6" ng-repeat="model in fleet.model">
+                      <h3>{{ model.title }}</h3>
+                      <p>{{ model.cacCount }}</p>
+                      <p ng-show="model.business">
+                        <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
+                        {{ model.business }}
+                      </p>
+                      <p>
+                        <img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> 
+                        {{ model.general }}
+                      </p>
+                      <a href="{{ model.details.url }}">
+                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon">
+                        {{ model.details.label }}
+                      </a><br>
+                      <a href="{{ model.music.url }}">
+                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
+                        {{ model.music.label }}
+                      </a>
+                   </div>
+                   
+                 </article>
+                </div>
+
+                <!-- Hub -->
+                <div ng-show="tab2Ctr.isSet(4)">
+                  <article ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
+                </div>
+              </section>
+
+            </div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
+            <div ng-include="'content/' + contentCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
+          </div><!-- /.blog-main -->
+
+        </div><!-- /.row -->
+      </div>
+     
+      
+      <footer ng-show="contentCtr.width < 600">
+        <div class="row footer-background">
+          <div class="col-xs-6 footer-body" ng-repeat="list in contentCtr.menuBottom.lists track by list.id">
+            <div class="footer-title">
+              <h3>{{ list.title }}</h3>
+            </div>
+            <ul>
+              <li ng-repeat="item in list.items">
+                <a href="{{ item.url }}">{{ item.label }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"> 
+        </div>
+      </footer>
+      <footer 
+        ng-show="contentCtr.width > 600" 
+        ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></footer>
+
+
+      </div> 
+    </div> <!-- /container -->
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/side_menu.js"></script>
+    <script src="js/angular_logic_list.js"></script>
+  </body>
+</html>
