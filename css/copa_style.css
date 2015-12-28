@@ -149,6 +149,12 @@ li.active > a {
   }
 }
 
+#hub .images { padding:20px; }
+
+.logo_hub, .img_hub { max-width: 100% }
+
+.logo_hub { margin-right: 10px }
+
 /*** Media ***/
 
 .Media { display: flex; background: white; padding: 20px;}

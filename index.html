@@ -219,7 +219,7 @@
 
               <!-- Hub -->
               <div ng-show="tab2Ctr.isSet(4)">
-                <article ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
+                <article id="hub" ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
               </div>
             </section>
 
@@ -236,7 +236,6 @@
       <div class="footer-min">
         <div ng-include="'content/' + contentCtr.currentLang.value + '/footer-min.html'"></div>
       </div>
-
       <div class="footer-normal">
         <div ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></div>
       </div>
