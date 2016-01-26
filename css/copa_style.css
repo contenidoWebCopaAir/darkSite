@@ -19,9 +19,9 @@ src:url("../fonts/f5fb4de8-efeb-47a8-94a7-50b825a6966a.eot?#iefix");
 src:url("../fonts/f5fb4de8-efeb-47a8-94a7-50b825a6966a.eot?#iefix") format("eot"),url("../fonts/cac25ebb-269d-41e9-8ee5-78589746706e.woff") format("woff"),url("../fonts/6a4b5dab-ebbd-4741-80c7-3b30cd46e05d.ttf") format("truetype"),url("../fonts/318af76f-0012-4791-a785-d241f2613955.svg#318af76f-0012-4791-a785-d241f2613955") format("svg");
 }
 
-h1, h2 { color: #214981; font-family:"Calibri W01 Bold 904607"; }
-h1 { font-size: 20px; }
-h3, h4 { color: #214981; font-family:"Calibri W01 Regular 904604"; margin-bottom: 16px; font-size: 14.5px; }
+h1, h2, h3, h4 { color: #214981; }
+h1, h2 { font-family:"Calibri W01 Bold 904607"; font-size: 20px;}
+h3, h4 { font-family:"Calibri W01 Regular 904604"; margin-bottom: 16px; font-size: 14.5px; }
 p, a { font-family:"Calibri W01 Regular 904604"; font-size: 14px; line-height: 18px; margin:0px  }
 p { color: #333; }
 a { color: #666; }
