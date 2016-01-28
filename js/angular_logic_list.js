@@ -744,8 +744,14 @@
 
 $(document).ready(function(){
 
+	var topMenu = $('ul.top-menu');
+
 	$('#toggle-menu').on('click', function(){
-		$(this).next().slideToggle();
+		topMenu.slideToggle();
+	});
+
+	$('ul.top-menu li').on('click', function(){
+		topMenu.slideToggle();
 	});
 
 	var win = $(window),
