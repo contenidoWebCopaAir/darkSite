@@ -29,7 +29,25 @@ ul > li { list-style: none; }
 
 .form-group { margin-top:30px; }
 
-.logo_copa { max-width:100%; margin-top: 10px; }
+.header { 
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.logo_copa, .lang_selector {
+  -webkit-flex:1;
+  -moz-flex:1;
+  -ms-flex:1;
+  flex:1;
+}
+
+.logo_copa a img, .lang_selector{ width:100%; }
+
+.logo_copa a img { margin:0; }
+
+.lang_selector { margin-top:10px; }
 
 @media(max-width: 990px){
   div.container { width:850px !important; }
@@ -63,14 +81,20 @@ ul {
   list-style: none;
 }
 
+
+
 @media screen and (min-width: 768px ){
   #toggle-menu {display: none}
 
   .top-menu {
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
   }
 
-  .top-menu li { 
+  .top-menu li {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */     
     flex:1;
     text-align: center;
     border-right: 1px solid rgba(0,0,0,.2);
@@ -97,7 +121,6 @@ ul {
   text-align: center;
   line-height: 1em;
   display: block;
-  padding-left: 10px;
   font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -121,7 +144,7 @@ ul {
 
 .tab { margin-top:40px; }
 
-li.active > a { 
+li.active > a, li.active { 
   background: #CCC !important; color:#000 !important; 
 }
 
@@ -159,7 +182,11 @@ li.active > a {
 
 .Media { display: flex; background: white; padding: 20px;}
 
+
+
 .Media__figure { margin-right: 1em; }
+
+
 
 .Media__body p:first-child, .Media__body h2 { margin-top:0; }
 
@@ -190,7 +217,20 @@ footer { margin-top: 30px; }
 
 .footer-title > .grid__column { text-align: left; margin-left: 10px; }
 
-.social, .termns { text-align: center; padding-top: 30px; }
+.social, .termns { padding-top: 30px; }
+
+.social { text-align: right; }
+
+.terms { text-align: left; }
+
+@media(max-width:450px){
+  .Media, .footer { flex-direction:column; }
+  .social, .termns { text-align: center; }
+  .social { padding: 0; margin-bottom: 20px; margin-top: 20px;  }
+  .social a img { width:7%; }
+  .logo_copa { width: 62% }
+  .form-group { margin-top: 0; }
+}
 
 
 
