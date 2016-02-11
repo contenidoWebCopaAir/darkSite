@@ -773,7 +773,7 @@ $(document).ready(function(){
 		fNormal.hide();
 	}
 	
-	if (win.width() > 768){
+	if (win.width() > 767){
 		fNormal.show();
 		fMin.hide();
 	}
