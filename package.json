@@ -1,0 +1,23 @@
+{
+  "name": "darkSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contenidoWebCopaAir/darkSite.git"
+  },
+  "keywords": [],
+  "author": "Pablo Ledesma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contenidoWebCopaAir/darkSite/issues"
+  },
+  "homepage": "https://github.com/contenidoWebCopaAir/darkSite#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}

@@ -24,14 +24,14 @@
 				{ text: 'Press Releases', url: 'content/en/press-releases.html' },
 				{ text: 'Assistance to Family', url: 'content/en/assistance-to-family.html' },
 				{ text: 'About Copa Airlines', url: 'content/en/corporate-tabs.html' },
-				{ text: 'Go to Copa.com', url: 'http://www.copaair.com/sites/us/en/pages/homepage.aspx'}
+				{ text: 'Go to Copa.com', url: 'http://www.copaair.com/en/web/gs'}
 			],
 			es: [
 				{ text: 'Últimas Noticias', url: 'content/es/latest-news-en.html' },
 				{ text: 'Comunicados de prensa', url: 'content/es/press-releases.html' },
 				{ text: 'Asistencia Familiar', url: 'content/es/assistance-to-family.html' },
 				{ text: 'Acerca de Copa Airlines', url: 'content/es/corporate-tabs.html' },
-				{ text: 'Ir a Copa.com', url: 'http://www.copaair.com/sites/us/es/pages/homepage.aspx'}
+				{ text: 'Ir a Copa.com', url: 'http://www.copaair.com/es/web/gs'}
 			],
 
 			pt: [
@@ -39,7 +39,7 @@
 				{ text: 'Comunicados da imprensa', url: 'content/pt/press-releases.html' },
 				{ text: 'Assistência à Família', url: 'content/pt/assistance-to-family.html' },
 				{ text: 'Acerca de Copa Airlines', url: 'content/pt/corporate-tabs.html' },
-				{ text: 'Visita Copa.com', url: 'http://www.copaair.com/sites/br/pt/pages/homepage.aspx'}
+				{ text: 'Visita Copa.com', url: 'http://www.copaair.com/pt/web/gs'}
 			]
 		},
 		menu_left: {			
