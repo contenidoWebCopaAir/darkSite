@@ -1,7 +1,7 @@
 {
   "name": "darkSite",
   "version": "1.0.0",
-  "description": "",
+  "description": "Copa Airlines Dark Site built in AngularJS",
   "main": "index.js",
   "scripts": {
     "start": "lite-server"
