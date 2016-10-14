@@ -78,7 +78,7 @@
 						id: 1,							
 						title: 'Fligth Information',
 						items: [
-							{ label: 'Baggage', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/condiciones-generales-de-equipaje.aspx' },
+							{ label: 'Baggage', url: 'http://www.copaair.com/baggage-policy' },
 							{ label: 'Travelling with pets', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/Mascotas.aspx' },
 							{ label: 'Baggage and service fees', url: 'http://www.copaair.com/sites/CC/en/informacion-de-viaje/Pages/tarifas-equipaje-y-de-servicios-opcionales.aspx' },
 							{ label: 'Where we fly', url: 'http://www.copaair.com/sites/CC/en/flight-information/Pages/routemap.aspx' },
