@@ -19,5 +19,8 @@
   "homepage": "https://github.com/contenidoWebCopaAir/darkSite#readme",
   "devDependencies": {
     "lite-server": "^2.2.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.8"
   }
 }
