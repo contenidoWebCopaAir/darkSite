@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="darkSite">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
 </head>
 
-<body ng-app="darkSite">
+<body>
 
     <div class="container" ng-controller="ContentController as contentCtr">
 
@@ -217,9 +217,6 @@
         </div>
 
         <footer>
-            <div class="footer-min">
-                <div ng-include="'content/' + contentCtr.currentLang.value + '/footer-min.html'"></div>
-            </div>
             <div class="footer-normal">
                 <div ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></div>
             </div>
@@ -232,7 +229,7 @@
     <script src="js/analytics.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
 
-    <script src="app/app.js"></script>
+    <script src="app.module.js"></script>
     <script src="js/angular_logic_list.js"></script>
 </body>
 </html>
