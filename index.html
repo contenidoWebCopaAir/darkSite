@@ -21,7 +21,7 @@
 
 <body>
 
-    <div class="container" ng-controller="ContentController as contentCtr">
+    <div class="container" ng-controller="ContentController as contentCtr" ng-cloak>
 
         <div class="row header">
             <div class="logo_copa">
@@ -37,7 +37,8 @@
                             class="form-control" 
                             ng-model="contentCtr.currentLang" 
                             ng-change="contentCtr.setLang()"
-                            ng-options="option.label for option in contentCtr.select track by option.value">
+                            ng-options="option.label for option in contentCtr.select track by option.value"
+                          >
                         </select>
                     </div>
                 </div>
