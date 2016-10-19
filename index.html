@@ -21,221 +21,216 @@
 
 <body ng-app="darkSite">
 
-  <div class="container" ng-controller="ContentController as contentCtr">
+    <div class="container" ng-controller="ContentController as contentCtr">
 
-    <div class="row header">
-      <div class="logo_copa">
-        <a href="http://www.copaair.com">
-          <img src="img/COPA_STAR_LOGO_BLACK.png">
-        </a>  
-      </div>
-      <div class="lang_selector">
-        <div class="form-group">
-          <div class="input-group">
-            <div class="input-group-addon"><i class="fa fa-globe fa-3"></i></div>
-            <select 
-            class="form-control" 
-            ng-model="contentCtr.currentLang" 
-            ng-change="contentCtr.setLang()"
-            ng-options="option.label for option in contentCtr.select track by option.value">
-          </select>
+        <div class="row header">
+            <div class="logo_copa">
+                <a href="http://www.copaair.com">
+                  <img src="img/COPA_STAR_LOGO_BLACK.png">
+                </a>  
+            </div>
+            <div class="lang_selector">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><i class="fa fa-globe fa-3"></i></div>
+                        <select 
+                            class="form-control" 
+                            ng-model="contentCtr.currentLang" 
+                            ng-change="contentCtr.setLang()"
+                            ng-options="option.label for option in contentCtr.select track by option.value">
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-    </div>
+        <div ng-controller="TabController as tabCtr">
 
-  </div>
-
-  <div ng-controller="TabController as tabCtr">
-
-    <!-- Static navbar -->
-    <nav>
-      <div id="toggle-menu">
-        <button class="navbar-toggler hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false">
-            ☰
-        </button>
-        
-      </div>
-    <ul class="top-menu">
-      <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
-        <a href="{{ contentCtr.menuTop[0].url }}" ng-click="tabCtr.setTab( 3 )">
-          {{  contentCtr.menuTop[0].text }}
-        </a>
-      </li>
-      <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
-        <a href="{{ contentCtr.menuTop[1].url }}" ng-click="tabCtr.setTab( 2 )">
-          {{  contentCtr.menuTop[1].text }}
-        </a>
-      </li>
-      <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
-        <a href="{{ contentCtr.menuTop[2].url }}" ng-click="tabCtr.setTab( 4 )">
-          {{  contentCtr.menuTop[2].text }}
-        </a>
-      </li>
-      <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
-        <a href="{{ contentCtr.menuTop[3].url }}" ng-click="tabCtr.setTab( 1 )">
-          {{  contentCtr.menuTop[3].text }}
-        </a>
-      </li>
-      <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
-        <a href="{{ contentCtr.menuTop[4].url }}" target="_blank">
-          {{  contentCtr.menuTop[4].text }}
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div class="row">
-
-    <div id="content" class="col-sm-12 blog-main">
-
-      <!-- Corporate Tabs -->
-      <div ng-show="tabCtr.isSet(1)">
-        <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
-          <ul class="nav nav-tabs">
-            <!-- History -->
-            <li ng-class="{ active: tab2Ctr.isSet(1) }">
-              <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
-            </li>
-
-            <!-- Security -->
-            <li ng-class="{ active: tab2Ctr.isSet(2) }">
-              <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
-            </li>
-
-            <!-- Fleet -->
-            <li ng-class="{ active: tab2Ctr.isSet(3) }">
-              <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
-            </li>
-
-            <!-- Hub -->
-            <li ng-class="{ active: tab2Ctr.isSet(4) }">
-              <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
-            </li>
-          </ul>
-
-          <!-- History -->
-          <div ng-show="tab2Ctr.isSet(1)">
-
-            <h2>{{ contentCtr.history.title }}</h2>
-            <p>{{ contentCtr.history.text }}</p>
-
-            <article ng-repeat="year in contentCtr.history.years">
-              <div class="Media">
-                <div class="Media__figure">
-                  <img ng-src="{{ year.img }}" class="history-img pull-left">
+            <!-- Static navbar -->
+            <nav>
+                <div id="toggle-menu">
+                    <button class="navbar-toggler hidden-sm-up collapsed" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false">
+                        ☰
+                    </button>
                 </div>
-                <div class="Media__body">
-                  <h2>{{ year.title }}</h2>
-                  <p>{{ year.text }}</p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- Security -->
-          <div ng-show="tab2Ctr.isSet(2)">
-            <h2>{{ contentCtr.security.title }}</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-
-              <!-- Fleet -->
-              <div ng-show="tab2Ctr.isSet(3)">
-                <article>
-                  <div class="Media">
-                    <div class="Media__figure">
-                      <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
-                      <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
-                    </div>
-                    <div class="Media__body">
-                      <p>{{ contentCtr.singleFleet.cacCount }}</p>
-                      <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
-                      <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
-                      <a href="{{ contentCtr.singleFleet.details.url }}">
-                        <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
-                        {{ contentCtr.singleFleet.details.label }}
-                      </a><br>
-                      <a href="{{ contentCtr.singleFleet.music.url }}">
-                        <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
-                        {{ contentCtr.singleFleet.music.label }}
-                      </a>
-                    </div>
-                  </div>
-                </article>
-
-                <article ng-repeat="fleet in contentCtr.fleet.fleets">
-                  <div class="Media">
-                    <div class="Media__figure">
-                      <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
-                      <img ng-src="{{ fleet.img }}" class="fleet2model">
-                    </div>
-                    <div class="Media__body">
-                      <div ng-repeat="model in fleet.model">
-                        <h3>{{ model.title }}</h3>
-                        <p>{{ model.cacCount }}</p>
-                        <p ng-show="model.business">
-                          <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
-                          {{ model.business }}
-                        </p>
-                        <p>
-                          <img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> 
-                          {{ model.general }}
-                        </p>
-                        <a href="{{ model.details.url }}">
-                          <img src="img/icon-detalles-tecnicos.png" class="fleet-icon">
-                          {{ model.details.label }}
-                        </a><br>
-                        <a href="{{ model.music.url }}">
-                          <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
-                          {{ model.music.label }}
+                <ul class="top-menu">
+                    <li ng-class="tabCtr.tab == 3 ? 'active' : ''">
+                        <a href="{{ contentCtr.menuTop[0].url }}" ng-click="tabCtr.setTab( 3 )">
+                          {{  contentCtr.menuTop[0].text }}
                         </a>
-                      </div>
+                    </li>
+                    <li ng-class="tabCtr.tab == 2 ? 'active' : ''">
+                        <a href="{{ contentCtr.menuTop[1].url }}" ng-click="tabCtr.setTab( 2 )">
+                          {{  contentCtr.menuTop[1].text }}
+                        </a>
+                    </li>
+                    <li ng-class="tabCtr.tab == 4 ? 'active' : ''">
+                        <a href="{{ contentCtr.menuTop[2].url }}" ng-click="tabCtr.setTab( 4 )">
+                          {{  contentCtr.menuTop[2].text }}
+                        </a>
+                    </li>
+                    <li ng-class="tabCtr.tab == 1 ? 'active' : ''">
+                    <a href="{{ contentCtr.menuTop[3].url }}" ng-click="tabCtr.setTab( 1 )">
+                      {{  contentCtr.menuTop[3].text }}
+                    </a>
+                  </li>
+                  <li ng-class="tabCtr.tab == 0 ? 'active' : ''">
+                    <a href="{{ contentCtr.menuTop[4].url }}" target="_blank">
+                      {{  contentCtr.menuTop[4].text }}
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+
+            <div class="row">
+                <div id="content" class="col-sm-12 blog-main">
+
+                    <!-- Corporate Tabs -->
+                    <div ng-show="tabCtr.isSet(1)">
+                        <section id="blog-post" class="tab" ng-controller="Tab2Controller as tab2Ctr">
+                            <ul class="nav nav-tabs">
+                                <!-- History -->
+                                <li ng-class="{ active: tab2Ctr.isSet(1) }">
+                                  <a href ng-click="tab2Ctr.setTab(1)">{{ contentCtr.history.title }}</a>
+                                </li>
+
+                                <!-- Security -->
+                                <li ng-class="{ active: tab2Ctr.isSet(2) }">
+                                  <a href ng-click="tab2Ctr.setTab(2)">{{ contentCtr.security.title }}</a>
+                                </li>
+
+                                <!-- Fleet -->
+                                <li ng-class="{ active: tab2Ctr.isSet(3) }">
+                                  <a href ng-click="tab2Ctr.setTab(3)">{{ contentCtr.fleet.title }}</a>
+                                </li>
+
+                                <!-- Hub -->
+                                <li ng-class="{ active: tab2Ctr.isSet(4) }">
+                                  <a href ng-click="tab2Ctr.setTab(4)">{{ contentCtr.hub.title }}</a>
+                                </li>
+                            </ul>
+
+                            <!-- History -->
+                            <div ng-show="tab2Ctr.isSet(1)">
+
+                                <h2>{{ contentCtr.history.title }}</h2>
+                                <p>{{ contentCtr.history.text }}</p>
+
+                                <article ng-repeat="year in contentCtr.history.years">
+                                  <div class="Media">
+                                    <div class="Media__figure">
+                                      <img ng-src="{{ year.img }}" class="history-img pull-left">
+                                    </div>
+                                    <div class="Media__body">
+                                      <h2>{{ year.title }}</h2>
+                                      <p>{{ year.text }}</p>
+                                    </div>
+                                  </div>
+                                </article>
+                            </div>
+
+                  <!-- Security -->
+                            <div ng-show="tab2Ctr.isSet(2)">
+                                <h2>{{ contentCtr.security.title }}</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+
+                            <!-- Fleet -->
+                            <div ng-show="tab2Ctr.isSet(3)">
+                                <article>
+                                    <div class="Media">
+                                        <div class="Media__figure">
+                                            <h3 class="text-center"><strong>{{ contentCtr.singleFleet.title }}</strong></h3>
+                                            <img ng-src="{{ contentCtr.singleFleet.img }}" class="fleet-img">
+                                        </div>
+                                        <div class="Media__body">
+                                            <p>{{ contentCtr.singleFleet.cacCount }}</p>
+                                            <p><img src="img/icon-asiento-business-class.png" class="fleet-icon"> {{ contentCtr.singleFleet.business }}</p>
+                                            <p><img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> {{ contentCtr.singleFleet.general }}</p>
+                                            <a href="{{ contentCtr.singleFleet.details.url }}">
+                                            <img src="img/icon-detalles-tecnicos.png" class="fleet-icon"> 
+                                            {{ contentCtr.singleFleet.details.label }}
+                                            </a><br>
+                                            <a href="{{ contentCtr.singleFleet.music.url }}">
+                                                <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon"> 
+                                                {{ contentCtr.singleFleet.music.label }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article ng-repeat="fleet in contentCtr.fleet.fleets">
+                                    <div class="Media">
+                                        <div class="Media__figure">
+                                            <h3 class="text-center"><strong>{{ fleet.title }}</strong></h3>
+                                            <img ng-src="{{ fleet.img }}" class="fleet2model">
+                                        </div>
+                                        <div class="Media__body">
+                                            <div ng-repeat="model in fleet.model">
+                                                <h3>{{ model.title }}</h3>
+                                                <p>{{ model.cacCount }}</p>
+                                                <p ng-show="model.business">
+                                                  <img src="img/icon-asiento-business-class.png" class="fleet-icon"> 
+                                                  {{ model.business }}
+                                                </p>
+                                                <p>
+                                                  <img src="img/icon-asiento-cabina-principal.png" class="fleet-icon"> 
+                                                  {{ model.general }}
+                                                </p>
+                                                <a href="{{ model.details.url }}">
+                                                  <img src="img/icon-detalles-tecnicos.png" class="fleet-icon">
+                                                  {{ model.details.label }}
+                                                </a><br>
+                                                <a href="{{ model.music.url }}">
+                                                  <img src="img/icon-entretenimient-a-bordo.png" class="fleet-icon">
+                                                  {{ model.music.label }}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </article>
+                            </div>
+
+                            <!-- Hub -->
+                            <div ng-show="tab2Ctr.isSet(4)">
+                                <article id="hub" ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
+                            </div>
+                        </section>
+
                     </div>
-                  </div>  
-                </article>
-              </div>
+                    <div ng-include="'content/' + contentCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
+                    <div ng-include="'content/' + contentCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
+                    <div ng-include="'content/' + contentCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
+                </div><!-- /.blog-main -->
 
-              <!-- Hub -->
-              <div ng-show="tab2Ctr.isSet(4)">
-                <article id="hub" ng-include="'content/' + contentCtr.currentLang.value + '/hub.html'"></article>
-              </div>
-            </section>
+            </div><!-- /.row -->
+        </div>
 
-          </div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/press-releases.html'" ng-show="tabCtr.isSet(2)"></div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/latestNews.html'" ng-show="tabCtr.isSet(3)"></div>
-          <div ng-include="'content/' + contentCtr.currentLang.value + '/assistance-to-family.html'" ng-show="tabCtr.isSet(4)"></div>
-        </div><!-- /.blog-main -->
+        <footer>
+            <div class="footer-min">
+                <div ng-include="'content/' + contentCtr.currentLang.value + '/footer-min.html'"></div>
+            </div>
+            <div class="footer-normal">
+                <div ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></div>
+            </div>
+            <div class="grid" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"></div>
+        </footer>
 
-      </div><!-- /.row -->
-    </div>
+    </div> <!-- /container -->
 
-    <footer>
-      <div class="footer-min">
-        <div ng-include="'content/' + contentCtr.currentLang.value + '/footer-min.html'"></div>
-      </div>
-      <div class="footer-normal">
-        <div ng-include="'content/' + contentCtr.currentLang.value + '/full-footer-ul.html'"></div>
-      </div>
-
-      <div class="grid" ng-include="'content/' + contentCtr.currentLang.value + '/copyright.html'"></div>
-    </footer>
-
-  </div> <!-- /container -->
-
-  <script src="js/angular.min.js"></script>
-  <script src="js/analytics.js"></script>
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/angular_logic_list.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/angular_logic_list.js"></script>
 </body>
 </html>
