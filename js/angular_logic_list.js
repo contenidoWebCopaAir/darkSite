@@ -638,7 +638,7 @@
 		} 
 	};
 
-	var app = angular.module('darkSite', []);
+	
 
 	app.controller('ContentController', function(){
 
@@ -742,45 +742,3 @@
 
 })();
 
-$(document).ready(function(){
-
-	var win = $(window),
-		windowWidth = win.width(),
-		fNormal = $("div.footer-normal"),
-		fMin = $("div.footer-min"),
-		topMenu = $('ul.top-menu');
-
-	$('#toggle-menu').on('click', function(){
-		topMenu.slideToggle();
-	});
-
-	if (win.width() < 768){
-		fNormal.hide();
-
-		$('ul.top-menu li').on('click', function(){
-			topMenu.slideToggle();
-		});
-	}
-	
-	if (win.width() > 768){
-		fMin.hide();
-	}
-
-	win.resize(function(){
-		
-	if (win.width() < 768){
-		fMin.show();
-		fNormal.hide();
-	}
-	
-	if (win.width() > 767){
-		fNormal.show();
-		fMin.hide();
-	}
-
-		
-	}); 
-
-
-
-});
