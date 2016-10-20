@@ -640,61 +640,69 @@ var data = {
 
 angular.module('darkSite').controller('ContentController', function(){
 
-		//Carga los valores por defecto
-		this.currentLang 	= { value:'es', label: 'Español' };
-		this.navClass 		= 'nav-es';
-		this.select 		= data.select.es;
-		this.menuTop 		= data.menu_top.es;
-		this.menuLeft 		= data.menu_left.es;
-		this.menuBottom		= data.min_footer.es;
-		this.history 		= data.history.es;
-		this.security 		= data.security.es;
-		this.fleet 			= data.fleet.es;
-		this.singleFleet 	= data.single_fleet.es;
-		this.hub 			= data.hub.es;
+	//Carga los valores por defecto
+	this.currentLang 	= { value:'es', label: 'Español' };
+	this.navClass 		= 'nav-es';
+	this.select 		= data.select.es;
+	this.menuTop 		= data.menu_top.es;
+	this.menuLeft 		= data.menu_left.es;
+	this.menuBottom		= data.min_footer.es;
+	this.history 		= data.history.es;
+	this.security 		= data.security.es;
+	this.fleet 			= data.fleet.es;
+	this.singleFleet 	= data.single_fleet.es;
+	this.hub 			= data.hub.es;
+	this.showFooter		= false;
 
-		/**
-		* Selecciona el idioma deseado
-		**/
-		this.setLang = function(){
-			switch(this.currentLang.value){
-				case 'en':
-					this.select		= data.select.en;
-					this.menuTop 	= data.menu_top.en;
-					this.menuLeft 	= data.menu_left.en;
-					this.navClass 	= 'nav-en';
-					this.history 	= data.history.en;
-					this.security 	= data.security.en;
-					this.fleet 		= data.fleet.en;
-					this.singleFleet 	= data.single_fleet.en;
-					this.hub 		= data.hub.en;
+	/**
+	* Selecciona el idioma deseado
+	**/
+	this.setLang = function(){
+		switch(this.currentLang.value){
+			case 'en':
+				this.select		= data.select.en;
+				this.menuTop 	= data.menu_top.en;
+				this.menuLeft 	= data.menu_left.en;
+				this.navClass 	= 'nav-en';
+				this.history 	= data.history.en;
+				this.security 	= data.security.en;
+				this.fleet 		= data.fleet.en;
+				this.singleFleet 	= data.single_fleet.en;
+				this.hub 		= data.hub.en;
 
-					break;
-				case 'es':
-					this.select		= data.select.es;		
-					this.menuTop 	= data.menu_top.es;
-					this.menuLeft 	= data.menu_left.es;
-					this.navClass 	= 'nav-es';
-					this.history 	= data.history.es;
-					this.security 	= data.security.es;
-					this.fleet 		= data.fleet.es;
-					this.singleFleet 	= data.single_fleet.es;
-					this.hub 		= data.hub.es;
-					break;
-				case 'pt':
-					this.select		= data.select.pt;
-					this.menuTop 	= data.menu_top.pt;
-					this.menuLeft 	= data.menu_left.pt;
-					this.navClass 	= 'nav-pt';
-					this.history 	= data.history.pt;
-					this.fleet 		= data.fleet.pt;
-					this.security 	= data.security.pt;
-					this.fleet 		= data.fleet.pt;
-					this.singleFleet 	= data.single_fleet.pt;
-					this.hub 		= data.hub.pt;
-					break;
-			}
-		};
+				break;
+			case 'es':
+				this.select		= data.select.es;		
+				this.menuTop 	= data.menu_top.es;
+				this.menuLeft 	= data.menu_left.es;
+				this.navClass 	= 'nav-es';
+				this.history 	= data.history.es;
+				this.security 	= data.security.es;
+				this.fleet 		= data.fleet.es;
+				this.singleFleet 	= data.single_fleet.es;
+				this.hub 		= data.hub.es;
+				break;
+			case 'pt':
+				this.select		= data.select.pt;
+				this.menuTop 	= data.menu_top.pt;
+				this.menuLeft 	= data.menu_left.pt;
+				this.navClass 	= 'nav-pt';
+				this.history 	= data.history.pt;
+				this.fleet 		= data.fleet.pt;
+				this.security 	= data.security.pt;
+				this.fleet 		= data.fleet.pt;
+				this.singleFleet 	= data.single_fleet.pt;
+				this.hub 		= data.hub.pt;
+				break;
+		}
+	};
+
+	/**
+	* Oculta y muestra el footer
+	**/
+	this.toggleFooter = function(){
+		
+	};
 
 });
 
@@ -708,7 +716,7 @@ angular.module('darkSite').controller('TabController', function(){
     this.isSet = function( value ){	
     	return this.tab === value;
     };
-	});
+});
 
 // Corporate
 	angular.module('darkSite').controller('Tab2Controller', function(){

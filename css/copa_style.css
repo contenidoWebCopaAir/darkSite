@@ -115,7 +115,7 @@ ul {
 
 .top-menu li a {
   color: #FFF;
-  font-size: 18px;
+  font-size: 17px;
   text-decoration: none;
   text-align: center;
   line-height: 1em;
@@ -196,6 +196,12 @@ li.active > a, li.active {
 
 .Media__body p:first-child, .Media__body h2 { margin-top:0; }
 
+/*** Noticias ***/
+
+.notice {  padding:20px; }
+.notice h3 { color:#0e4a81; font-size: 1.5em; font-weight: bold;}
+.notice p { margin-bottom: 10px; } 
+
 
 /*** Footer ***/
 
@@ -208,6 +214,10 @@ footer {
   font-weight: normal;
   color: #000;
   font-size: 1em;
+}
+
+.footer-content { 
+  background: rgb(239,239,239);
 }
 
 .footer-content > .grid__column, .footer-title > .grid__column { border-right: 1px solid rgba(0,0,0,0.2) }
@@ -228,9 +238,7 @@ footer {
   background: rgb(180, 180, 180);
 }
 
-.footer-content {
-  background: rgb(239,239,239);
-}
+
 
 .footer-title > .grid__column { text-align: left; margin-left: 10px; }
 
